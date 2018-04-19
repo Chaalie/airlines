@@ -1,0 +1,6621 @@
+[
+{
+    "model": "flights.country",
+    "pk": "ALB",
+    "fields": {
+        "name": "Albania"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "AUT",
+    "fields": {
+        "name": "Austria"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "BEL",
+    "fields": {
+        "name": "Belgium"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "BGR",
+    "fields": {
+        "name": "Bulgaria"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "BIH",
+    "fields": {
+        "name": "Bosnia and Herzegovina"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "BLR",
+    "fields": {
+        "name": "Belarus"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "CHE",
+    "fields": {
+        "name": "Switzerland"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "CZE",
+    "fields": {
+        "name": "Czech Republic"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "DEU",
+    "fields": {
+        "name": "Germany"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "DNK",
+    "fields": {
+        "name": "Denmark"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "ESP",
+    "fields": {
+        "name": "Spain"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "EST",
+    "fields": {
+        "name": "Estonia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "FIN",
+    "fields": {
+        "name": "Finland"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "FRA",
+    "fields": {
+        "name": "France"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "GBR",
+    "fields": {
+        "name": "United Kingdom"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "GRC",
+    "fields": {
+        "name": "Greece"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "HRV",
+    "fields": {
+        "name": "Croatia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "HUN",
+    "fields": {
+        "name": "Hungary"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "IRL",
+    "fields": {
+        "name": "Ireland"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "ITA",
+    "fields": {
+        "name": "Italy"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "LTU",
+    "fields": {
+        "name": "Lithuania"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "LVA",
+    "fields": {
+        "name": "Latvia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "MKD",
+    "fields": {
+        "name": "Macedonia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "MNE",
+    "fields": {
+        "name": "Montenegro"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "NLD",
+    "fields": {
+        "name": "Netherlands"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "NOR",
+    "fields": {
+        "name": "Norway"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "POL",
+    "fields": {
+        "name": "Poland"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "PRT",
+    "fields": {
+        "name": "Portugal"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "ROU",
+    "fields": {
+        "name": "Romania"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "RUS",
+    "fields": {
+        "name": "Russian Federation"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "SRB",
+    "fields": {
+        "name": "Serbia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "SVK",
+    "fields": {
+        "name": "Slovakia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "SVN",
+    "fields": {
+        "name": "Slovenia"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "SWE",
+    "fields": {
+        "name": "Sweden"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "UKR",
+    "fields": {
+        "name": "Ukraine"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 316,
+    "fields": {
+        "name": "Tirana",
+        "country_id": "ALB"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 317,
+    "fields": {
+        "name": "Vienna",
+        "country_id": "AUT"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 318,
+    "fields": {
+        "name": "Sarajevo",
+        "country_id": "BIH"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 319,
+    "fields": {
+        "name": "Brussels",
+        "country_id": "BEL"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 320,
+    "fields": {
+        "name": "Sofia",
+        "country_id": "BGR"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 321,
+    "fields": {
+        "name": "Minsk",
+        "country_id": "BLR"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 322,
+    "fields": {
+        "name": "Bern",
+        "country_id": "CHE"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 323,
+    "fields": {
+        "name": "Prague",
+        "country_id": "CZE"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 324,
+    "fields": {
+        "name": "Berlin",
+        "country_id": "DEU"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 325,
+    "fields": {
+        "name": "Copenhagen",
+        "country_id": "DNK"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 326,
+    "fields": {
+        "name": "Tallinn",
+        "country_id": "EST"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 327,
+    "fields": {
+        "name": "Madrid",
+        "country_id": "ESP"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 328,
+    "fields": {
+        "name": "Helsinki",
+        "country_id": "FIN"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 329,
+    "fields": {
+        "name": "Paris",
+        "country_id": "FRA"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 330,
+    "fields": {
+        "name": "London",
+        "country_id": "GBR"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 331,
+    "fields": {
+        "name": "Athens",
+        "country_id": "GRC"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 332,
+    "fields": {
+        "name": "Zagreb",
+        "country_id": "HRV"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 333,
+    "fields": {
+        "name": "Budapest",
+        "country_id": "HUN"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 334,
+    "fields": {
+        "name": "Dublin",
+        "country_id": "IRL"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 335,
+    "fields": {
+        "name": "Rome",
+        "country_id": "ITA"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 336,
+    "fields": {
+        "name": "Vilnius",
+        "country_id": "LTU"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 337,
+    "fields": {
+        "name": "Riga",
+        "country_id": "LVA"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 338,
+    "fields": {
+        "name": "Podgorica",
+        "country_id": "MNE"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 339,
+    "fields": {
+        "name": "Skopje",
+        "country_id": "MKD"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 340,
+    "fields": {
+        "name": "Amsterdam",
+        "country_id": "NLD"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 341,
+    "fields": {
+        "name": "Oslo",
+        "country_id": "NOR"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 342,
+    "fields": {
+        "name": "Warsaw",
+        "country_id": "POL"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 343,
+    "fields": {
+        "name": "Lisbon",
+        "country_id": "PRT"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 344,
+    "fields": {
+        "name": "Bucharest",
+        "country_id": "ROU"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 345,
+    "fields": {
+        "name": "Belgrade",
+        "country_id": "SRB"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 346,
+    "fields": {
+        "name": "Moscow",
+        "country_id": "RUS"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 347,
+    "fields": {
+        "name": "Stockholm",
+        "country_id": "SWE"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 348,
+    "fields": {
+        "name": "Ljubljana",
+        "country_id": "SVN"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 349,
+    "fields": {
+        "name": "Bratislava",
+        "country_id": "SVK"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 350,
+    "fields": {
+        "name": "Kiev",
+        "country_id": "UKR"
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 55,
+    "fields": {
+        "producer": "Boeing",
+        "model": "737",
+        "seats": 30
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 56,
+    "fields": {
+        "producer": "Airbus",
+        "model": "A320",
+        "seats": 40
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 57,
+    "fields": {
+        "producer": "Airbus",
+        "model": "A330",
+        "seats": 40
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 58,
+    "fields": {
+        "producer": "Boeing",
+        "model": "777",
+        "seats": 50
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 59,
+    "fields": {
+        "producer": "Embraer",
+        "model": "E170",
+        "seats": 20
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 60,
+    "fields": {
+        "producer": "Bombardier",
+        "model": "CRJ700",
+        "seats": 20
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Aegwynn",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Aiur",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Alexstrasza",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Alleria",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Anduin",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Archimonde",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Argus",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Artanis",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Arthas",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Ashbringer",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Azeroth",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Azshara",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Baine",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Bolvar",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Cairne",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Cenarius",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Doomhammer",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Draenor",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Elune",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Frostmourne",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Gallywix",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Garona",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Garrosh",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Greymane",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Grommash",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Gul'dan",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Illidan",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Kael'thas",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Kargath",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Kel'Thuzad",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Khadgar",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Kil'jaeden",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Lor'themar",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Magni",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Maiev",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Mal'Ganis",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Malfurion",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Malygos",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Mannoroth",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Medivh",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Mengsk",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Muradin",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Neltharion",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Ner'Zhul",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Nova",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Nozdormu",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Orgrim",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Proudmoore",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Ragnaros",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Raynor",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Rexxar",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Rhonin",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Sargeras",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Saurfang",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Sylvanas",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Thrall",
+    "fields": {
+        "aircraft_id": 57
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Tirion",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Turalyon",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Tychus",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Tyrande",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Uther",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Varian",
+    "fields": {
+        "aircraft_id": 58
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Velen",
+    "fields": {
+        "aircraft_id": 56
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Vereesa",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Vol'jin",
+    "fields": {
+        "aircraft_id": 60
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Ysera",
+    "fields": {
+        "aircraft_id": 59
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Zeratul",
+    "fields": {
+        "aircraft_id": 55
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "AMS",
+    "fields": {
+        "city_id": 340,
+        "name": "Amsterdam Airport Schiphol"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "ARN",
+    "fields": {
+        "city_id": 347,
+        "name": "Stockholm-Arlanda Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "ATH",
+    "fields": {
+        "city_id": 331,
+        "name": "Eleftherios Venizelos International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "BEG",
+    "fields": {
+        "city_id": 345,
+        "name": "Belgrade Nikola Tesla Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "BRN",
+    "fields": {
+        "city_id": 322,
+        "name": "Bern Belp Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "BRU",
+    "fields": {
+        "city_id": 319,
+        "name": "Brussels Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "BTS",
+    "fields": {
+        "city_id": 349,
+        "name": "M. R. \u0160tef\u00e1nik Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "BUD",
+    "fields": {
+        "city_id": 333,
+        "name": "Budapest Ferenc Liszt International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "CDG",
+    "fields": {
+        "city_id": 329,
+        "name": "Charles de Gaulle International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "CPH",
+    "fields": {
+        "city_id": 325,
+        "name": "Copenhagen Kastrup Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "DUB",
+    "fields": {
+        "city_id": 334,
+        "name": "Dublin Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "FCO",
+    "fields": {
+        "city_id": 335,
+        "name": "Leonardo da Vinci\u2013Fiumicino Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "HEL",
+    "fields": {
+        "city_id": 328,
+        "name": "Helsinki Vantaa Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "KBP",
+    "fields": {
+        "city_id": 350,
+        "name": "Boryspil International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "LHR",
+    "fields": {
+        "city_id": 330,
+        "name": "London Heathrow Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "LIS",
+    "fields": {
+        "city_id": 343,
+        "name": "Lisbon Portela Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "LJU",
+    "fields": {
+        "city_id": 348,
+        "name": "Ljubljana Jo\u017ee Pu\u010dnik Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "MAD",
+    "fields": {
+        "city_id": 327,
+        "name": "Adolfo Su\u00e1rez Madrid\u2013Barajas Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "MHP",
+    "fields": {
+        "city_id": 321,
+        "name": "Minsk 1 Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "N/A",
+    "fields": {
+        "city_id": 326,
+        "name": "Tallinn Linnahall Heliport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "OSL",
+    "fields": {
+        "city_id": 341,
+        "name": "Oslo Gardermoen Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "OTP",
+    "fields": {
+        "city_id": 344,
+        "name": "Henri Coand\u0103 International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "PRG",
+    "fields": {
+        "city_id": 323,
+        "name": "V\u00e1clav Havel Airport Prague"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "RIX",
+    "fields": {
+        "city_id": 337,
+        "name": "Riga International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "SJJ",
+    "fields": {
+        "city_id": 318,
+        "name": "Sarajevo International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "SKP",
+    "fields": {
+        "city_id": 339,
+        "name": "Skopje Alexander the Great Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "SOF",
+    "fields": {
+        "city_id": 320,
+        "name": "Sofia Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "SVO",
+    "fields": {
+        "city_id": 346,
+        "name": "Sheremetyevo International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "TGD",
+    "fields": {
+        "city_id": 338,
+        "name": "Podgorica Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "TIA",
+    "fields": {
+        "city_id": 316,
+        "name": "Tirana International Airport Mother Teresa"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "TXL",
+    "fields": {
+        "city_id": 324,
+        "name": "Berlin-Tegel International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "VIE",
+    "fields": {
+        "city_id": 317,
+        "name": "Vienna International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "VNO",
+    "fields": {
+        "city_id": 336,
+        "name": "Vilnius International Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "WAW",
+    "fields": {
+        "city_id": 342,
+        "name": "Warsaw Chopin Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "ZAG",
+    "fields": {
+        "city_id": 332,
+        "name": "Zagreb Airport"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 921,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-04-10T09:00:00Z",
+        "end_date": "2018-04-10T19:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 922,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-04-20T21:00:00Z",
+        "end_date": "2018-04-21T02:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 923,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-04-27T02:00:00Z",
+        "end_date": "2018-04-27T06:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 924,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-05-07T04:00:00Z",
+        "end_date": "2018-05-07T10:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 925,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-05-14T02:00:00Z",
+        "end_date": "2018-05-14T07:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 926,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-05-24T10:00:00Z",
+        "end_date": "2018-05-24T20:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 927,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-06-04T04:00:00Z",
+        "end_date": "2018-06-04T09:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 928,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-06-10T12:00:00Z",
+        "end_date": "2018-06-10T21:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 929,
+    "fields": {
+        "plane_id": "Artanis",
+        "start_date": "2018-06-19T03:00:00Z",
+        "end_date": "2018-06-19T09:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 930,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-04-08T08:00:00Z",
+        "end_date": "2018-04-08T15:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 931,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-04-14T02:00:00Z",
+        "end_date": "2018-04-14T08:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 932,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-04-20T14:00:00Z",
+        "end_date": "2018-04-20T18:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 933,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-05-01T10:00:00Z",
+        "end_date": "2018-05-01T15:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 934,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-05-06T07:00:00Z",
+        "end_date": "2018-05-06T11:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 935,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-05-15T17:00:00Z",
+        "end_date": "2018-05-15T22:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 936,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-05-22T08:00:00Z",
+        "end_date": "2018-05-22T16:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 937,
+    "fields": {
+        "plane_id": "Zeratul",
+        "start_date": "2018-05-28T11:00:00Z",
+        "end_date": "2018-05-28T15:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 938,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-04-05T08:00:00Z",
+        "end_date": "2018-04-05T15:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 939,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-04-10T14:00:00Z",
+        "end_date": "2018-04-10T22:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 940,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-04-21T04:00:00Z",
+        "end_date": "2018-04-21T11:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 941,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-05-02T09:00:00Z",
+        "end_date": "2018-05-02T17:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 942,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-05-11T22:00:00Z",
+        "end_date": "2018-05-12T06:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 943,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-05-20T05:00:00Z",
+        "end_date": "2018-05-20T10:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 944,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-05-26T20:00:00Z",
+        "end_date": "2018-05-27T02:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 945,
+    "fields": {
+        "plane_id": "Aiur",
+        "start_date": "2018-06-01T03:00:00Z",
+        "end_date": "2018-06-01T07:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 946,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-04-08T18:00:00Z",
+        "end_date": "2018-04-09T00:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 947,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-04-13T21:00:00Z",
+        "end_date": "2018-04-14T02:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 948,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-04-23T21:00:00Z",
+        "end_date": "2018-04-24T06:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 949,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-04-30T08:00:00Z",
+        "end_date": "2018-04-30T15:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 950,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-05-10T22:00:00Z",
+        "end_date": "2018-05-11T02:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 951,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-05-17T11:00:00Z",
+        "end_date": "2018-05-17T16:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 952,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-05-24T15:00:00Z",
+        "end_date": "2018-05-24T23:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 953,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-06-01T02:00:00Z",
+        "end_date": "2018-06-01T07:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 954,
+    "fields": {
+        "plane_id": "Raynor",
+        "start_date": "2018-06-11T19:00:00Z",
+        "end_date": "2018-06-12T01:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 955,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-04-08T02:00:00Z",
+        "end_date": "2018-04-08T11:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 956,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-04-15T20:00:00Z",
+        "end_date": "2018-04-16T04:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 957,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-04-23T23:00:00Z",
+        "end_date": "2018-04-24T04:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 958,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-05-05T00:00:00Z",
+        "end_date": "2018-05-05T05:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 959,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-05-15T18:00:00Z",
+        "end_date": "2018-05-16T01:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 960,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-05-25T17:00:00Z",
+        "end_date": "2018-05-26T02:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 961,
+    "fields": {
+        "plane_id": "Nova",
+        "start_date": "2018-06-02T16:00:00Z",
+        "end_date": "2018-06-03T00:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 962,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-04-09T01:00:00Z",
+        "end_date": "2018-04-09T09:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 963,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-04-17T02:00:00Z",
+        "end_date": "2018-04-17T09:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 964,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-04-28T07:00:00Z",
+        "end_date": "2018-04-28T11:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 965,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-05-07T07:00:00Z",
+        "end_date": "2018-05-07T11:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 966,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-05-15T15:00:00Z",
+        "end_date": "2018-05-15T22:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 967,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-05-23T11:00:00Z",
+        "end_date": "2018-05-23T15:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 968,
+    "fields": {
+        "plane_id": "Tychus",
+        "start_date": "2018-05-31T07:00:00Z",
+        "end_date": "2018-05-31T14:00:00Z",
+        "src_airport": "CPH",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 969,
+    "fields": {
+        "plane_id": "Mengsk",
+        "start_date": "2018-04-09T16:00:00Z",
+        "end_date": "2018-04-09T22:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 970,
+    "fields": {
+        "plane_id": "Mengsk",
+        "start_date": "2018-04-15T21:00:00Z",
+        "end_date": "2018-04-16T04:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 971,
+    "fields": {
+        "plane_id": "Mengsk",
+        "start_date": "2018-04-26T00:00:00Z",
+        "end_date": "2018-04-26T08:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 972,
+    "fields": {
+        "plane_id": "Mengsk",
+        "start_date": "2018-05-01T22:00:00Z",
+        "end_date": "2018-05-02T07:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 973,
+    "fields": {
+        "plane_id": "Archimonde",
+        "start_date": "2018-04-06T13:00:00Z",
+        "end_date": "2018-04-06T17:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 974,
+    "fields": {
+        "plane_id": "Archimonde",
+        "start_date": "2018-04-16T22:00:00Z",
+        "end_date": "2018-04-17T05:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 975,
+    "fields": {
+        "plane_id": "Archimonde",
+        "start_date": "2018-04-26T09:00:00Z",
+        "end_date": "2018-04-26T18:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 976,
+    "fields": {
+        "plane_id": "Archimonde",
+        "start_date": "2018-05-06T05:00:00Z",
+        "end_date": "2018-05-06T09:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 977,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-04-09T21:00:00Z",
+        "end_date": "2018-04-10T03:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 978,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-04-17T00:00:00Z",
+        "end_date": "2018-04-17T05:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 979,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-04-22T04:00:00Z",
+        "end_date": "2018-04-22T09:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 980,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-04-30T01:00:00Z",
+        "end_date": "2018-04-30T07:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 981,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-05-08T18:00:00Z",
+        "end_date": "2018-05-08T23:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 982,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-05-14T14:00:00Z",
+        "end_date": "2018-05-14T18:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 983,
+    "fields": {
+        "plane_id": "Mannoroth",
+        "start_date": "2018-05-22T13:00:00Z",
+        "end_date": "2018-05-22T22:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 984,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-04-11T09:00:00Z",
+        "end_date": "2018-04-11T15:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 985,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-04-17T13:00:00Z",
+        "end_date": "2018-04-17T18:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 986,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-04-27T11:00:00Z",
+        "end_date": "2018-04-27T18:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 987,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-05-06T10:00:00Z",
+        "end_date": "2018-05-06T18:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 988,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-05-11T18:00:00Z",
+        "end_date": "2018-05-11T23:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 989,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-05-16T03:00:00Z",
+        "end_date": "2018-05-16T09:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 990,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-05-26T17:00:00Z",
+        "end_date": "2018-05-27T03:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 991,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-06-01T20:00:00Z",
+        "end_date": "2018-06-02T06:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 992,
+    "fields": {
+        "plane_id": "Kil'jaeden",
+        "start_date": "2018-06-06T22:00:00Z",
+        "end_date": "2018-06-07T08:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 993,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-04-09T22:00:00Z",
+        "end_date": "2018-04-10T03:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 994,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-04-20T02:00:00Z",
+        "end_date": "2018-04-20T08:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 995,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-04-26T06:00:00Z",
+        "end_date": "2018-04-26T13:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 996,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-05-03T21:00:00Z",
+        "end_date": "2018-05-04T02:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 997,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-05-13T06:00:00Z",
+        "end_date": "2018-05-13T11:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 998,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-05-21T16:00:00Z",
+        "end_date": "2018-05-22T00:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 999,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-05-26T11:00:00Z",
+        "end_date": "2018-05-26T21:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1000,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-05-31T15:00:00Z",
+        "end_date": "2018-06-01T01:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1001,
+    "fields": {
+        "plane_id": "Ner'Zhul",
+        "start_date": "2018-06-10T01:00:00Z",
+        "end_date": "2018-06-10T08:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1002,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-04-11T09:00:00Z",
+        "end_date": "2018-04-11T16:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1003,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-04-20T15:00:00Z",
+        "end_date": "2018-04-21T00:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1004,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-04-28T23:00:00Z",
+        "end_date": "2018-04-29T05:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1005,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-05-05T03:00:00Z",
+        "end_date": "2018-05-05T08:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1006,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-05-12T14:00:00Z",
+        "end_date": "2018-05-12T18:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1007,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-05-22T06:00:00Z",
+        "end_date": "2018-05-22T15:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1008,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-05-30T05:00:00Z",
+        "end_date": "2018-05-30T15:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1009,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-06-08T12:00:00Z",
+        "end_date": "2018-06-08T16:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1010,
+    "fields": {
+        "plane_id": "Sargeras",
+        "start_date": "2018-06-14T18:00:00Z",
+        "end_date": "2018-06-15T00:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1011,
+    "fields": {
+        "plane_id": "Mal'Ganis",
+        "start_date": "2018-04-05T13:00:00Z",
+        "end_date": "2018-04-05T22:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1012,
+    "fields": {
+        "plane_id": "Mal'Ganis",
+        "start_date": "2018-04-11T17:00:00Z",
+        "end_date": "2018-04-11T23:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1013,
+    "fields": {
+        "plane_id": "Mal'Ganis",
+        "start_date": "2018-04-18T06:00:00Z",
+        "end_date": "2018-04-18T10:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1014,
+    "fields": {
+        "plane_id": "Mal'Ganis",
+        "start_date": "2018-04-25T22:00:00Z",
+        "end_date": "2018-04-26T07:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1015,
+    "fields": {
+        "plane_id": "Mal'Ganis",
+        "start_date": "2018-04-30T07:00:00Z",
+        "end_date": "2018-04-30T15:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1016,
+    "fields": {
+        "plane_id": "Mal'Ganis",
+        "start_date": "2018-05-10T08:00:00Z",
+        "end_date": "2018-05-10T15:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1017,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-04-06T20:00:00Z",
+        "end_date": "2018-04-07T01:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1018,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-04-17T00:00:00Z",
+        "end_date": "2018-04-17T07:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1019,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-04-24T17:00:00Z",
+        "end_date": "2018-04-25T01:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1020,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-05-03T14:00:00Z",
+        "end_date": "2018-05-03T22:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1021,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-05-11T07:00:00Z",
+        "end_date": "2018-05-11T15:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1022,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-05-19T09:00:00Z",
+        "end_date": "2018-05-19T13:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1023,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-05-25T03:00:00Z",
+        "end_date": "2018-05-25T13:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1024,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-05-31T23:00:00Z",
+        "end_date": "2018-06-01T05:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1025,
+    "fields": {
+        "plane_id": "Velen",
+        "start_date": "2018-06-07T03:00:00Z",
+        "end_date": "2018-06-07T10:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1026,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-04-11T10:00:00Z",
+        "end_date": "2018-04-11T19:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1027,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-04-21T11:00:00Z",
+        "end_date": "2018-04-21T20:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1028,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-04-29T12:00:00Z",
+        "end_date": "2018-04-29T17:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1029,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-05-05T04:00:00Z",
+        "end_date": "2018-05-05T08:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1030,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-05-13T12:00:00Z",
+        "end_date": "2018-05-13T19:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1031,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-05-21T16:00:00Z",
+        "end_date": "2018-05-22T00:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1032,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-06-01T00:00:00Z",
+        "end_date": "2018-06-01T04:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1033,
+    "fields": {
+        "plane_id": "Alexstrasza",
+        "start_date": "2018-06-11T18:00:00Z",
+        "end_date": "2018-06-12T03:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1034,
+    "fields": {
+        "plane_id": "Malygos",
+        "start_date": "2018-04-07T15:00:00Z",
+        "end_date": "2018-04-07T23:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1035,
+    "fields": {
+        "plane_id": "Malygos",
+        "start_date": "2018-04-12T22:00:00Z",
+        "end_date": "2018-04-13T03:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1036,
+    "fields": {
+        "plane_id": "Malygos",
+        "start_date": "2018-04-20T08:00:00Z",
+        "end_date": "2018-04-20T17:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1037,
+    "fields": {
+        "plane_id": "Malygos",
+        "start_date": "2018-05-01T16:00:00Z",
+        "end_date": "2018-05-02T00:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1038,
+    "fields": {
+        "plane_id": "Malygos",
+        "start_date": "2018-05-10T12:00:00Z",
+        "end_date": "2018-05-10T22:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1039,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-04-08T21:00:00Z",
+        "end_date": "2018-04-09T03:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1040,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-04-15T03:00:00Z",
+        "end_date": "2018-04-15T13:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1041,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-04-19T18:00:00Z",
+        "end_date": "2018-04-20T04:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1042,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-04-29T19:00:00Z",
+        "end_date": "2018-04-30T05:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1043,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-05-08T14:00:00Z",
+        "end_date": "2018-05-09T00:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1044,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-05-16T18:00:00Z",
+        "end_date": "2018-05-16T22:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1045,
+    "fields": {
+        "plane_id": "Neltharion",
+        "start_date": "2018-05-24T04:00:00Z",
+        "end_date": "2018-05-24T13:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1046,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-04-10T17:00:00Z",
+        "end_date": "2018-04-11T02:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1047,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-04-18T11:00:00Z",
+        "end_date": "2018-04-18T20:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1048,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-04-24T17:00:00Z",
+        "end_date": "2018-04-25T01:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1049,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-05-03T18:00:00Z",
+        "end_date": "2018-05-04T03:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1050,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-05-08T05:00:00Z",
+        "end_date": "2018-05-08T14:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1051,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-05-15T17:00:00Z",
+        "end_date": "2018-05-16T03:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1052,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-05-26T20:00:00Z",
+        "end_date": "2018-05-27T06:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1053,
+    "fields": {
+        "plane_id": "Nozdormu",
+        "start_date": "2018-06-01T22:00:00Z",
+        "end_date": "2018-06-02T04:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1054,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-04-10T13:00:00Z",
+        "end_date": "2018-04-10T23:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1055,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-04-20T10:00:00Z",
+        "end_date": "2018-04-20T16:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1056,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-04-29T18:00:00Z",
+        "end_date": "2018-04-30T03:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1057,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-05-08T04:00:00Z",
+        "end_date": "2018-05-08T12:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1058,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-05-18T10:00:00Z",
+        "end_date": "2018-05-18T20:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1059,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-05-29T19:00:00Z",
+        "end_date": "2018-05-30T01:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1060,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-06-06T06:00:00Z",
+        "end_date": "2018-06-06T11:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1061,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-06-12T18:00:00Z",
+        "end_date": "2018-06-13T00:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1062,
+    "fields": {
+        "plane_id": "Ysera",
+        "start_date": "2018-06-23T16:00:00Z",
+        "end_date": "2018-06-24T01:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1063,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-04-06T22:00:00Z",
+        "end_date": "2018-04-07T07:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1064,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-04-14T01:00:00Z",
+        "end_date": "2018-04-14T07:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1065,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-04-19T09:00:00Z",
+        "end_date": "2018-04-19T19:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1066,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-04-28T21:00:00Z",
+        "end_date": "2018-04-29T03:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1067,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-05-04T12:00:00Z",
+        "end_date": "2018-05-04T17:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1068,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-05-14T05:00:00Z",
+        "end_date": "2018-05-14T09:00:00Z",
+        "src_airport": "CPH",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1069,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-05-19T04:00:00Z",
+        "end_date": "2018-05-19T09:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1070,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-05-25T18:00:00Z",
+        "end_date": "2018-05-26T01:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1071,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-06-03T17:00:00Z",
+        "end_date": "2018-06-04T00:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1072,
+    "fields": {
+        "plane_id": "Muradin",
+        "start_date": "2018-06-11T15:00:00Z",
+        "end_date": "2018-06-12T00:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1073,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-04-07T13:00:00Z",
+        "end_date": "2018-04-07T22:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1074,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-04-13T21:00:00Z",
+        "end_date": "2018-04-14T01:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1075,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-04-23T03:00:00Z",
+        "end_date": "2018-04-23T10:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1076,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-05-04T02:00:00Z",
+        "end_date": "2018-05-04T06:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1077,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-05-08T06:00:00Z",
+        "end_date": "2018-05-08T10:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1078,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-05-13T01:00:00Z",
+        "end_date": "2018-05-13T09:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1079,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-05-22T04:00:00Z",
+        "end_date": "2018-05-22T13:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1080,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-05-29T01:00:00Z",
+        "end_date": "2018-05-29T06:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1081,
+    "fields": {
+        "plane_id": "Magni",
+        "start_date": "2018-06-05T10:00:00Z",
+        "end_date": "2018-06-05T15:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1082,
+    "fields": {
+        "plane_id": "Kael'thas",
+        "start_date": "2018-04-10T17:00:00Z",
+        "end_date": "2018-04-11T03:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1083,
+    "fields": {
+        "plane_id": "Kael'thas",
+        "start_date": "2018-04-21T23:00:00Z",
+        "end_date": "2018-04-22T05:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1084,
+    "fields": {
+        "plane_id": "Kael'thas",
+        "start_date": "2018-04-27T18:00:00Z",
+        "end_date": "2018-04-28T02:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1085,
+    "fields": {
+        "plane_id": "Kael'thas",
+        "start_date": "2018-05-04T07:00:00Z",
+        "end_date": "2018-05-04T12:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1086,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-04-05T06:00:00Z",
+        "end_date": "2018-04-05T14:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1087,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-04-10T18:00:00Z",
+        "end_date": "2018-04-11T02:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1088,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-04-15T11:00:00Z",
+        "end_date": "2018-04-15T19:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1089,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-04-22T19:00:00Z",
+        "end_date": "2018-04-23T02:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1090,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-04-30T00:00:00Z",
+        "end_date": "2018-04-30T10:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1091,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-05-06T21:00:00Z",
+        "end_date": "2018-05-07T05:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1092,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-05-16T17:00:00Z",
+        "end_date": "2018-05-17T01:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1093,
+    "fields": {
+        "plane_id": "Lor'themar",
+        "start_date": "2018-05-25T13:00:00Z",
+        "end_date": "2018-05-25T18:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1094,
+    "fields": {
+        "plane_id": "Sylvanas",
+        "start_date": "2018-04-06T08:00:00Z",
+        "end_date": "2018-04-06T16:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1095,
+    "fields": {
+        "plane_id": "Sylvanas",
+        "start_date": "2018-04-14T21:00:00Z",
+        "end_date": "2018-04-15T07:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1096,
+    "fields": {
+        "plane_id": "Sylvanas",
+        "start_date": "2018-04-20T01:00:00Z",
+        "end_date": "2018-04-20T09:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1097,
+    "fields": {
+        "plane_id": "Sylvanas",
+        "start_date": "2018-04-29T02:00:00Z",
+        "end_date": "2018-04-29T09:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1098,
+    "fields": {
+        "plane_id": "Sylvanas",
+        "start_date": "2018-05-05T17:00:00Z",
+        "end_date": "2018-05-06T03:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1099,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-04-09T04:00:00Z",
+        "end_date": "2018-04-09T11:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1100,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-04-16T11:00:00Z",
+        "end_date": "2018-04-16T16:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1101,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-04-22T12:00:00Z",
+        "end_date": "2018-04-22T19:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1102,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-04-27T21:00:00Z",
+        "end_date": "2018-04-28T04:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1103,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-05-04T15:00:00Z",
+        "end_date": "2018-05-05T01:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1104,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-05-09T06:00:00Z",
+        "end_date": "2018-05-09T12:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1105,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-05-16T15:00:00Z",
+        "end_date": "2018-05-16T22:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1106,
+    "fields": {
+        "plane_id": "Alleria",
+        "start_date": "2018-05-22T20:00:00Z",
+        "end_date": "2018-05-23T03:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1107,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-04-10T07:00:00Z",
+        "end_date": "2018-04-10T17:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1108,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-04-17T03:00:00Z",
+        "end_date": "2018-04-17T08:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1109,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-04-27T13:00:00Z",
+        "end_date": "2018-04-27T17:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1110,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-05-04T10:00:00Z",
+        "end_date": "2018-05-04T14:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1111,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-05-13T17:00:00Z",
+        "end_date": "2018-05-14T00:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1112,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-05-21T04:00:00Z",
+        "end_date": "2018-05-21T12:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1113,
+    "fields": {
+        "plane_id": "Vereesa",
+        "start_date": "2018-05-26T01:00:00Z",
+        "end_date": "2018-05-26T07:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1114,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-04-11T23:00:00Z",
+        "end_date": "2018-04-12T05:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1115,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-04-20T05:00:00Z",
+        "end_date": "2018-04-20T15:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1116,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-04-24T22:00:00Z",
+        "end_date": "2018-04-25T06:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1117,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-04-30T21:00:00Z",
+        "end_date": "2018-05-01T06:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1118,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-05-10T16:00:00Z",
+        "end_date": "2018-05-10T21:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1119,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-05-15T12:00:00Z",
+        "end_date": "2018-05-15T19:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1120,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-05-21T07:00:00Z",
+        "end_date": "2018-05-21T12:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1121,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-05-28T02:00:00Z",
+        "end_date": "2018-05-28T09:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1122,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-06-01T14:00:00Z",
+        "end_date": "2018-06-01T20:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1123,
+    "fields": {
+        "plane_id": "Azshara",
+        "start_date": "2018-06-10T09:00:00Z",
+        "end_date": "2018-06-10T14:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1124,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-04-11T23:00:00Z",
+        "end_date": "2018-04-12T06:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1125,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-04-21T19:00:00Z",
+        "end_date": "2018-04-22T02:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1126,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-04-29T15:00:00Z",
+        "end_date": "2018-04-30T00:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1127,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-05-06T07:00:00Z",
+        "end_date": "2018-05-06T16:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1128,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-05-11T02:00:00Z",
+        "end_date": "2018-05-11T09:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1129,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-05-21T05:00:00Z",
+        "end_date": "2018-05-21T14:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1130,
+    "fields": {
+        "plane_id": "Illidan",
+        "start_date": "2018-06-01T06:00:00Z",
+        "end_date": "2018-06-01T13:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1131,
+    "fields": {
+        "plane_id": "Malfurion",
+        "start_date": "2018-04-10T11:00:00Z",
+        "end_date": "2018-04-10T19:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1132,
+    "fields": {
+        "plane_id": "Malfurion",
+        "start_date": "2018-04-18T06:00:00Z",
+        "end_date": "2018-04-18T14:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1133,
+    "fields": {
+        "plane_id": "Malfurion",
+        "start_date": "2018-04-28T00:00:00Z",
+        "end_date": "2018-04-28T05:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1134,
+    "fields": {
+        "plane_id": "Malfurion",
+        "start_date": "2018-05-07T21:00:00Z",
+        "end_date": "2018-05-08T04:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1135,
+    "fields": {
+        "plane_id": "Malfurion",
+        "start_date": "2018-05-14T13:00:00Z",
+        "end_date": "2018-05-14T23:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1136,
+    "fields": {
+        "plane_id": "Malfurion",
+        "start_date": "2018-05-22T19:00:00Z",
+        "end_date": "2018-05-23T03:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1137,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-04-10T04:00:00Z",
+        "end_date": "2018-04-10T14:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1138,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-04-21T08:00:00Z",
+        "end_date": "2018-04-21T14:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1139,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-04-27T12:00:00Z",
+        "end_date": "2018-04-27T18:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1140,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-05-07T08:00:00Z",
+        "end_date": "2018-05-07T17:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1141,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-05-17T17:00:00Z",
+        "end_date": "2018-05-18T03:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1142,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-05-27T06:00:00Z",
+        "end_date": "2018-05-27T13:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1143,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-06-03T13:00:00Z",
+        "end_date": "2018-06-03T18:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1144,
+    "fields": {
+        "plane_id": "Tyrande",
+        "start_date": "2018-06-10T11:00:00Z",
+        "end_date": "2018-06-10T18:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1145,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-04-07T03:00:00Z",
+        "end_date": "2018-04-07T07:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1146,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-04-15T11:00:00Z",
+        "end_date": "2018-04-15T21:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1147,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-04-26T08:00:00Z",
+        "end_date": "2018-04-26T15:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1148,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-05-05T20:00:00Z",
+        "end_date": "2018-05-06T01:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1149,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-05-16T00:00:00Z",
+        "end_date": "2018-05-16T06:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1150,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-05-23T12:00:00Z",
+        "end_date": "2018-05-23T22:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1151,
+    "fields": {
+        "plane_id": "Maiev",
+        "start_date": "2018-06-02T18:00:00Z",
+        "end_date": "2018-06-03T02:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1152,
+    "fields": {
+        "plane_id": "Cenarius",
+        "start_date": "2018-04-09T16:00:00Z",
+        "end_date": "2018-04-09T23:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1153,
+    "fields": {
+        "plane_id": "Cenarius",
+        "start_date": "2018-04-14T07:00:00Z",
+        "end_date": "2018-04-14T14:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1154,
+    "fields": {
+        "plane_id": "Cenarius",
+        "start_date": "2018-04-18T20:00:00Z",
+        "end_date": "2018-04-19T01:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1155,
+    "fields": {
+        "plane_id": "Cenarius",
+        "start_date": "2018-04-24T13:00:00Z",
+        "end_date": "2018-04-24T21:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1156,
+    "fields": {
+        "plane_id": "Cenarius",
+        "start_date": "2018-04-30T17:00:00Z",
+        "end_date": "2018-05-01T02:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1157,
+    "fields": {
+        "plane_id": "Cenarius",
+        "start_date": "2018-05-05T14:00:00Z",
+        "end_date": "2018-05-05T23:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1158,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-04-11T20:00:00Z",
+        "end_date": "2018-04-12T05:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1159,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-04-21T01:00:00Z",
+        "end_date": "2018-04-21T05:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1160,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-04-29T14:00:00Z",
+        "end_date": "2018-04-29T19:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1161,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-05-08T00:00:00Z",
+        "end_date": "2018-05-08T04:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1162,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-05-15T04:00:00Z",
+        "end_date": "2018-05-15T14:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1163,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-05-23T01:00:00Z",
+        "end_date": "2018-05-23T11:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1164,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-05-30T21:00:00Z",
+        "end_date": "2018-05-31T04:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1165,
+    "fields": {
+        "plane_id": "Ragnaros",
+        "start_date": "2018-06-05T19:00:00Z",
+        "end_date": "2018-06-06T01:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1166,
+    "fields": {
+        "plane_id": "Elune",
+        "start_date": "2018-04-10T08:00:00Z",
+        "end_date": "2018-04-10T14:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1167,
+    "fields": {
+        "plane_id": "Elune",
+        "start_date": "2018-04-19T10:00:00Z",
+        "end_date": "2018-04-19T19:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1168,
+    "fields": {
+        "plane_id": "Elune",
+        "start_date": "2018-04-27T03:00:00Z",
+        "end_date": "2018-04-27T09:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1169,
+    "fields": {
+        "plane_id": "Elune",
+        "start_date": "2018-05-06T01:00:00Z",
+        "end_date": "2018-05-06T08:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1170,
+    "fields": {
+        "plane_id": "Gallywix",
+        "start_date": "2018-04-11T23:00:00Z",
+        "end_date": "2018-04-12T07:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1171,
+    "fields": {
+        "plane_id": "Gallywix",
+        "start_date": "2018-04-16T16:00:00Z",
+        "end_date": "2018-04-17T02:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1172,
+    "fields": {
+        "plane_id": "Gallywix",
+        "start_date": "2018-04-21T13:00:00Z",
+        "end_date": "2018-04-21T23:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1173,
+    "fields": {
+        "plane_id": "Gallywix",
+        "start_date": "2018-04-28T04:00:00Z",
+        "end_date": "2018-04-28T13:00:00Z",
+        "src_airport": "CPH",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1174,
+    "fields": {
+        "plane_id": "Gallywix",
+        "start_date": "2018-05-09T12:00:00Z",
+        "end_date": "2018-05-09T22:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1175,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-04-05T22:00:00Z",
+        "end_date": "2018-04-06T04:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1176,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-04-14T11:00:00Z",
+        "end_date": "2018-04-14T18:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1177,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-04-21T17:00:00Z",
+        "end_date": "2018-04-21T23:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1178,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-04-27T03:00:00Z",
+        "end_date": "2018-04-27T10:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1179,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-05-02T03:00:00Z",
+        "end_date": "2018-05-02T09:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1180,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-05-09T15:00:00Z",
+        "end_date": "2018-05-10T01:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1181,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-05-16T22:00:00Z",
+        "end_date": "2018-05-17T08:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1182,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-05-27T07:00:00Z",
+        "end_date": "2018-05-27T14:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1183,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-06-07T02:00:00Z",
+        "end_date": "2018-06-07T11:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1184,
+    "fields": {
+        "plane_id": "Aegwynn",
+        "start_date": "2018-06-17T14:00:00Z",
+        "end_date": "2018-06-17T23:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1185,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-04-11T16:00:00Z",
+        "end_date": "2018-04-11T21:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1186,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-04-22T17:00:00Z",
+        "end_date": "2018-04-23T02:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1187,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-05-02T23:00:00Z",
+        "end_date": "2018-05-03T03:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1188,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-05-13T13:00:00Z",
+        "end_date": "2018-05-13T21:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1189,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-05-19T10:00:00Z",
+        "end_date": "2018-05-19T17:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1190,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-05-26T18:00:00Z",
+        "end_date": "2018-05-26T23:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1191,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-06-02T09:00:00Z",
+        "end_date": "2018-06-02T14:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1192,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-06-08T02:00:00Z",
+        "end_date": "2018-06-08T08:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1193,
+    "fields": {
+        "plane_id": "Anduin",
+        "start_date": "2018-06-18T04:00:00Z",
+        "end_date": "2018-06-18T13:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1194,
+    "fields": {
+        "plane_id": "Arthas",
+        "start_date": "2018-04-09T18:00:00Z",
+        "end_date": "2018-04-10T01:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1195,
+    "fields": {
+        "plane_id": "Arthas",
+        "start_date": "2018-04-15T19:00:00Z",
+        "end_date": "2018-04-16T01:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1196,
+    "fields": {
+        "plane_id": "Arthas",
+        "start_date": "2018-04-25T09:00:00Z",
+        "end_date": "2018-04-25T15:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1197,
+    "fields": {
+        "plane_id": "Arthas",
+        "start_date": "2018-05-01T09:00:00Z",
+        "end_date": "2018-05-01T17:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1198,
+    "fields": {
+        "plane_id": "Bolvar",
+        "start_date": "2018-04-11T00:00:00Z",
+        "end_date": "2018-04-11T08:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1199,
+    "fields": {
+        "plane_id": "Bolvar",
+        "start_date": "2018-04-20T13:00:00Z",
+        "end_date": "2018-04-20T18:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1200,
+    "fields": {
+        "plane_id": "Bolvar",
+        "start_date": "2018-04-27T19:00:00Z",
+        "end_date": "2018-04-28T02:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1201,
+    "fields": {
+        "plane_id": "Bolvar",
+        "start_date": "2018-05-03T17:00:00Z",
+        "end_date": "2018-05-03T21:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1202,
+    "fields": {
+        "plane_id": "Bolvar",
+        "start_date": "2018-05-09T20:00:00Z",
+        "end_date": "2018-05-10T04:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1203,
+    "fields": {
+        "plane_id": "Bolvar",
+        "start_date": "2018-05-15T08:00:00Z",
+        "end_date": "2018-05-15T12:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1204,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-04-11T00:00:00Z",
+        "end_date": "2018-04-11T06:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1205,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-04-18T16:00:00Z",
+        "end_date": "2018-04-18T23:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1206,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-04-25T12:00:00Z",
+        "end_date": "2018-04-25T17:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1207,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-05-02T00:00:00Z",
+        "end_date": "2018-05-02T08:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1208,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-05-06T11:00:00Z",
+        "end_date": "2018-05-06T18:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1209,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-05-13T22:00:00Z",
+        "end_date": "2018-05-14T05:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1210,
+    "fields": {
+        "plane_id": "Greymane",
+        "start_date": "2018-05-22T22:00:00Z",
+        "end_date": "2018-05-23T06:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1211,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-04-10T03:00:00Z",
+        "end_date": "2018-04-10T08:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1212,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-04-17T02:00:00Z",
+        "end_date": "2018-04-17T12:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1213,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-04-25T07:00:00Z",
+        "end_date": "2018-04-25T11:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1214,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-04-30T00:00:00Z",
+        "end_date": "2018-04-30T04:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1215,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-05-05T19:00:00Z",
+        "end_date": "2018-05-06T04:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1216,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-05-13T16:00:00Z",
+        "end_date": "2018-05-14T02:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1217,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-05-18T13:00:00Z",
+        "end_date": "2018-05-18T21:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1218,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-05-29T16:00:00Z",
+        "end_date": "2018-05-30T02:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1219,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-06-06T09:00:00Z",
+        "end_date": "2018-06-06T16:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1220,
+    "fields": {
+        "plane_id": "Proudmoore",
+        "start_date": "2018-06-11T07:00:00Z",
+        "end_date": "2018-06-11T14:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1221,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-04-10T11:00:00Z",
+        "end_date": "2018-04-10T15:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1222,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-04-20T11:00:00Z",
+        "end_date": "2018-04-20T19:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1223,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-04-29T03:00:00Z",
+        "end_date": "2018-04-29T10:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1224,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-05-03T15:00:00Z",
+        "end_date": "2018-05-04T00:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1225,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-05-08T20:00:00Z",
+        "end_date": "2018-05-09T02:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1226,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-05-19T18:00:00Z",
+        "end_date": "2018-05-20T04:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1227,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-05-27T21:00:00Z",
+        "end_date": "2018-05-28T02:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1228,
+    "fields": {
+        "plane_id": "Kel'Thuzad",
+        "start_date": "2018-06-04T02:00:00Z",
+        "end_date": "2018-06-04T12:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1229,
+    "fields": {
+        "plane_id": "Khadgar",
+        "start_date": "2018-04-10T02:00:00Z",
+        "end_date": "2018-04-10T11:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1230,
+    "fields": {
+        "plane_id": "Khadgar",
+        "start_date": "2018-04-18T03:00:00Z",
+        "end_date": "2018-04-18T08:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1231,
+    "fields": {
+        "plane_id": "Khadgar",
+        "start_date": "2018-04-28T04:00:00Z",
+        "end_date": "2018-04-28T14:00:00Z",
+        "src_airport": "CPH",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1232,
+    "fields": {
+        "plane_id": "Khadgar",
+        "start_date": "2018-05-06T00:00:00Z",
+        "end_date": "2018-05-06T06:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1233,
+    "fields": {
+        "plane_id": "Khadgar",
+        "start_date": "2018-05-14T20:00:00Z",
+        "end_date": "2018-05-15T04:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1234,
+    "fields": {
+        "plane_id": "Khadgar",
+        "start_date": "2018-05-23T04:00:00Z",
+        "end_date": "2018-05-23T10:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1235,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-04-06T03:00:00Z",
+        "end_date": "2018-04-06T11:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1236,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-04-12T16:00:00Z",
+        "end_date": "2018-04-12T20:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1237,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-04-23T08:00:00Z",
+        "end_date": "2018-04-23T17:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1238,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-05-01T20:00:00Z",
+        "end_date": "2018-05-02T05:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1239,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-05-08T10:00:00Z",
+        "end_date": "2018-05-08T19:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1240,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-05-18T16:00:00Z",
+        "end_date": "2018-05-19T00:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1241,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-05-27T13:00:00Z",
+        "end_date": "2018-05-27T21:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1242,
+    "fields": {
+        "plane_id": "Medivh",
+        "start_date": "2018-06-06T12:00:00Z",
+        "end_date": "2018-06-06T18:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1243,
+    "fields": {
+        "plane_id": "Rhonin",
+        "start_date": "2018-04-06T01:00:00Z",
+        "end_date": "2018-04-06T11:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1244,
+    "fields": {
+        "plane_id": "Rhonin",
+        "start_date": "2018-04-16T08:00:00Z",
+        "end_date": "2018-04-16T15:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1245,
+    "fields": {
+        "plane_id": "Rhonin",
+        "start_date": "2018-04-25T13:00:00Z",
+        "end_date": "2018-04-25T20:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1246,
+    "fields": {
+        "plane_id": "Rhonin",
+        "start_date": "2018-05-05T09:00:00Z",
+        "end_date": "2018-05-05T17:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1247,
+    "fields": {
+        "plane_id": "Rhonin",
+        "start_date": "2018-05-12T11:00:00Z",
+        "end_date": "2018-05-12T21:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1248,
+    "fields": {
+        "plane_id": "Rhonin",
+        "start_date": "2018-05-23T19:00:00Z",
+        "end_date": "2018-05-24T00:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1249,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-04-07T22:00:00Z",
+        "end_date": "2018-04-08T05:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1250,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-04-14T04:00:00Z",
+        "end_date": "2018-04-14T12:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1251,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-04-25T01:00:00Z",
+        "end_date": "2018-04-25T08:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1252,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-05-02T13:00:00Z",
+        "end_date": "2018-05-02T23:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1253,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-05-12T17:00:00Z",
+        "end_date": "2018-05-12T23:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1254,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-05-21T04:00:00Z",
+        "end_date": "2018-05-21T08:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1255,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-05-28T01:00:00Z",
+        "end_date": "2018-05-28T11:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1256,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-06-07T03:00:00Z",
+        "end_date": "2018-06-07T09:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1257,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-06-16T08:00:00Z",
+        "end_date": "2018-06-16T12:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1258,
+    "fields": {
+        "plane_id": "Tirion",
+        "start_date": "2018-06-20T16:00:00Z",
+        "end_date": "2018-06-20T23:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1259,
+    "fields": {
+        "plane_id": "Turalyon",
+        "start_date": "2018-04-08T12:00:00Z",
+        "end_date": "2018-04-08T21:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1260,
+    "fields": {
+        "plane_id": "Turalyon",
+        "start_date": "2018-04-13T12:00:00Z",
+        "end_date": "2018-04-13T22:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1261,
+    "fields": {
+        "plane_id": "Turalyon",
+        "start_date": "2018-04-20T23:00:00Z",
+        "end_date": "2018-04-21T09:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1262,
+    "fields": {
+        "plane_id": "Turalyon",
+        "start_date": "2018-04-28T06:00:00Z",
+        "end_date": "2018-04-28T13:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1263,
+    "fields": {
+        "plane_id": "Turalyon",
+        "start_date": "2018-05-03T01:00:00Z",
+        "end_date": "2018-05-03T05:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1264,
+    "fields": {
+        "plane_id": "Uther",
+        "start_date": "2018-04-08T07:00:00Z",
+        "end_date": "2018-04-08T16:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1265,
+    "fields": {
+        "plane_id": "Uther",
+        "start_date": "2018-04-13T03:00:00Z",
+        "end_date": "2018-04-13T09:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1266,
+    "fields": {
+        "plane_id": "Uther",
+        "start_date": "2018-04-21T07:00:00Z",
+        "end_date": "2018-04-21T11:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1267,
+    "fields": {
+        "plane_id": "Uther",
+        "start_date": "2018-05-02T05:00:00Z",
+        "end_date": "2018-05-02T12:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1268,
+    "fields": {
+        "plane_id": "Uther",
+        "start_date": "2018-05-08T05:00:00Z",
+        "end_date": "2018-05-08T12:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1269,
+    "fields": {
+        "plane_id": "Varian",
+        "start_date": "2018-04-10T07:00:00Z",
+        "end_date": "2018-04-10T16:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1270,
+    "fields": {
+        "plane_id": "Varian",
+        "start_date": "2018-04-18T19:00:00Z",
+        "end_date": "2018-04-18T23:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1271,
+    "fields": {
+        "plane_id": "Varian",
+        "start_date": "2018-04-29T17:00:00Z",
+        "end_date": "2018-04-29T22:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1272,
+    "fields": {
+        "plane_id": "Varian",
+        "start_date": "2018-05-09T16:00:00Z",
+        "end_date": "2018-05-09T23:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1273,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-04-07T16:00:00Z",
+        "end_date": "2018-04-07T23:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1274,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-04-13T18:00:00Z",
+        "end_date": "2018-04-14T00:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1275,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-04-24T14:00:00Z",
+        "end_date": "2018-04-24T23:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1276,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-04-30T09:00:00Z",
+        "end_date": "2018-04-30T17:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1277,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-05-05T12:00:00Z",
+        "end_date": "2018-05-05T18:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1278,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-05-13T02:00:00Z",
+        "end_date": "2018-05-13T11:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1279,
+    "fields": {
+        "plane_id": "Grommash",
+        "start_date": "2018-05-22T18:00:00Z",
+        "end_date": "2018-05-23T04:00:00Z",
+        "src_airport": "CPH",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1280,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-04-05T14:00:00Z",
+        "end_date": "2018-04-05T18:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1281,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-04-16T01:00:00Z",
+        "end_date": "2018-04-16T05:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1282,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-04-23T18:00:00Z",
+        "end_date": "2018-04-23T22:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1283,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-05-02T14:00:00Z",
+        "end_date": "2018-05-02T23:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1284,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-05-12T14:00:00Z",
+        "end_date": "2018-05-12T20:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1285,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-05-21T03:00:00Z",
+        "end_date": "2018-05-21T09:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1286,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-06-01T02:00:00Z",
+        "end_date": "2018-06-01T10:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "SVO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1287,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-06-10T22:00:00Z",
+        "end_date": "2018-06-11T02:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1288,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-06-16T18:00:00Z",
+        "end_date": "2018-06-17T02:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1289,
+    "fields": {
+        "plane_id": "Gul'dan",
+        "start_date": "2018-06-24T07:00:00Z",
+        "end_date": "2018-06-24T12:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1290,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-04-07T15:00:00Z",
+        "end_date": "2018-04-07T21:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1291,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-04-12T06:00:00Z",
+        "end_date": "2018-04-12T10:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1292,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-04-22T08:00:00Z",
+        "end_date": "2018-04-22T14:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1293,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-05-03T00:00:00Z",
+        "end_date": "2018-05-03T05:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "TIA"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1294,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-05-09T01:00:00Z",
+        "end_date": "2018-05-09T11:00:00Z",
+        "src_airport": "TIA",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1295,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-05-13T13:00:00Z",
+        "end_date": "2018-05-13T20:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1296,
+    "fields": {
+        "plane_id": "Orgrim",
+        "start_date": "2018-05-24T08:00:00Z",
+        "end_date": "2018-05-24T16:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1297,
+    "fields": {
+        "plane_id": "Thrall",
+        "start_date": "2018-04-09T05:00:00Z",
+        "end_date": "2018-04-09T10:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1298,
+    "fields": {
+        "plane_id": "Thrall",
+        "start_date": "2018-04-17T22:00:00Z",
+        "end_date": "2018-04-18T02:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1299,
+    "fields": {
+        "plane_id": "Thrall",
+        "start_date": "2018-04-24T13:00:00Z",
+        "end_date": "2018-04-24T19:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1300,
+    "fields": {
+        "plane_id": "Thrall",
+        "start_date": "2018-05-01T00:00:00Z",
+        "end_date": "2018-05-01T08:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1301,
+    "fields": {
+        "plane_id": "Saurfang",
+        "start_date": "2018-04-05T01:00:00Z",
+        "end_date": "2018-04-05T11:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1302,
+    "fields": {
+        "plane_id": "Saurfang",
+        "start_date": "2018-04-11T10:00:00Z",
+        "end_date": "2018-04-11T20:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1303,
+    "fields": {
+        "plane_id": "Saurfang",
+        "start_date": "2018-04-19T03:00:00Z",
+        "end_date": "2018-04-19T09:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1304,
+    "fields": {
+        "plane_id": "Saurfang",
+        "start_date": "2018-04-29T18:00:00Z",
+        "end_date": "2018-04-30T00:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "KBP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1305,
+    "fields": {
+        "plane_id": "Saurfang",
+        "start_date": "2018-05-04T20:00:00Z",
+        "end_date": "2018-05-05T05:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1306,
+    "fields": {
+        "plane_id": "Saurfang",
+        "start_date": "2018-05-13T15:00:00Z",
+        "end_date": "2018-05-13T19:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1307,
+    "fields": {
+        "plane_id": "Kargath",
+        "start_date": "2018-04-07T04:00:00Z",
+        "end_date": "2018-04-07T14:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1308,
+    "fields": {
+        "plane_id": "Kargath",
+        "start_date": "2018-04-18T09:00:00Z",
+        "end_date": "2018-04-18T14:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1309,
+    "fields": {
+        "plane_id": "Kargath",
+        "start_date": "2018-04-25T07:00:00Z",
+        "end_date": "2018-04-25T16:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1310,
+    "fields": {
+        "plane_id": "Kargath",
+        "start_date": "2018-04-30T13:00:00Z",
+        "end_date": "2018-04-30T20:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1311,
+    "fields": {
+        "plane_id": "Kargath",
+        "start_date": "2018-05-08T05:00:00Z",
+        "end_date": "2018-05-08T11:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1312,
+    "fields": {
+        "plane_id": "Kargath",
+        "start_date": "2018-05-13T19:00:00Z",
+        "end_date": "2018-05-14T03:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1313,
+    "fields": {
+        "plane_id": "Garrosh",
+        "start_date": "2018-04-11T08:00:00Z",
+        "end_date": "2018-04-11T17:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "TGD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1314,
+    "fields": {
+        "plane_id": "Garrosh",
+        "start_date": "2018-04-21T16:00:00Z",
+        "end_date": "2018-04-21T22:00:00Z",
+        "src_airport": "TGD",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1315,
+    "fields": {
+        "plane_id": "Garrosh",
+        "start_date": "2018-04-29T04:00:00Z",
+        "end_date": "2018-04-29T13:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1316,
+    "fields": {
+        "plane_id": "Garrosh",
+        "start_date": "2018-05-04T15:00:00Z",
+        "end_date": "2018-05-05T00:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1317,
+    "fields": {
+        "plane_id": "Garrosh",
+        "start_date": "2018-05-09T01:00:00Z",
+        "end_date": "2018-05-09T10:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1318,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-04-06T22:00:00Z",
+        "end_date": "2018-04-07T04:00:00Z",
+        "src_airport": "SVO",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1319,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-04-15T03:00:00Z",
+        "end_date": "2018-04-15T07:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "BUD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1320,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-04-20T00:00:00Z",
+        "end_date": "2018-04-20T08:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1321,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-04-27T14:00:00Z",
+        "end_date": "2018-04-27T20:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1322,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-05-05T23:00:00Z",
+        "end_date": "2018-05-06T07:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1323,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-05-16T11:00:00Z",
+        "end_date": "2018-05-16T17:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1324,
+    "fields": {
+        "plane_id": "Garona",
+        "start_date": "2018-05-25T17:00:00Z",
+        "end_date": "2018-05-25T23:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1325,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-04-11T01:00:00Z",
+        "end_date": "2018-04-11T06:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1326,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-04-22T04:00:00Z",
+        "end_date": "2018-04-22T14:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1327,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-05-02T06:00:00Z",
+        "end_date": "2018-05-02T16:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1328,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-05-11T07:00:00Z",
+        "end_date": "2018-05-11T17:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1329,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-05-17T14:00:00Z",
+        "end_date": "2018-05-17T23:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1330,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-05-25T10:00:00Z",
+        "end_date": "2018-05-25T17:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1331,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-06-03T16:00:00Z",
+        "end_date": "2018-06-04T00:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1332,
+    "fields": {
+        "plane_id": "Rexxar",
+        "start_date": "2018-06-08T18:00:00Z",
+        "end_date": "2018-06-09T01:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1333,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-04-10T03:00:00Z",
+        "end_date": "2018-04-10T08:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1334,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-04-18T16:00:00Z",
+        "end_date": "2018-04-19T00:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1335,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-04-23T16:00:00Z",
+        "end_date": "2018-04-24T00:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1336,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-04-28T02:00:00Z",
+        "end_date": "2018-04-28T11:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1337,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-05-05T08:00:00Z",
+        "end_date": "2018-05-05T14:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1338,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-05-10T08:00:00Z",
+        "end_date": "2018-05-10T14:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1339,
+    "fields": {
+        "plane_id": "Baine",
+        "start_date": "2018-05-19T18:00:00Z",
+        "end_date": "2018-05-20T00:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1340,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-04-08T11:00:00Z",
+        "end_date": "2018-04-08T19:00:00Z",
+        "src_airport": "KBP",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1341,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-04-16T01:00:00Z",
+        "end_date": "2018-04-16T06:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1342,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-04-24T09:00:00Z",
+        "end_date": "2018-04-24T18:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1343,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-05-05T14:00:00Z",
+        "end_date": "2018-05-05T18:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "BTS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1344,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-05-12T10:00:00Z",
+        "end_date": "2018-05-12T20:00:00Z",
+        "src_airport": "BTS",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1345,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-05-20T17:00:00Z",
+        "end_date": "2018-05-20T21:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1346,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-05-31T11:00:00Z",
+        "end_date": "2018-05-31T20:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1347,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-06-06T09:00:00Z",
+        "end_date": "2018-06-06T13:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1348,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-06-13T10:00:00Z",
+        "end_date": "2018-06-13T17:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1349,
+    "fields": {
+        "plane_id": "Cairne",
+        "start_date": "2018-06-21T21:00:00Z",
+        "end_date": "2018-06-22T07:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1350,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-04-10T19:00:00Z",
+        "end_date": "2018-04-11T00:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1351,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-04-20T06:00:00Z",
+        "end_date": "2018-04-20T12:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1352,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-04-27T07:00:00Z",
+        "end_date": "2018-04-27T15:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1353,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-05-04T01:00:00Z",
+        "end_date": "2018-05-04T06:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1354,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-05-09T17:00:00Z",
+        "end_date": "2018-05-10T01:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1355,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-05-19T00:00:00Z",
+        "end_date": "2018-05-19T04:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1356,
+    "fields": {
+        "plane_id": "Vol'jin",
+        "start_date": "2018-05-25T19:00:00Z",
+        "end_date": "2018-05-26T00:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "CPH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1357,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-04-09T16:00:00Z",
+        "end_date": "2018-04-10T01:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1358,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-04-19T07:00:00Z",
+        "end_date": "2018-04-19T12:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1359,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-04-27T07:00:00Z",
+        "end_date": "2018-04-27T15:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "OTP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1360,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-05-02T18:00:00Z",
+        "end_date": "2018-05-03T04:00:00Z",
+        "src_airport": "OTP",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1361,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-05-10T00:00:00Z",
+        "end_date": "2018-05-10T10:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1362,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-05-18T21:00:00Z",
+        "end_date": "2018-05-19T04:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "CDG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1363,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-05-29T13:00:00Z",
+        "end_date": "2018-05-29T22:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1364,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-06-05T10:00:00Z",
+        "end_date": "2018-06-05T16:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1365,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-06-10T06:00:00Z",
+        "end_date": "2018-06-10T12:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1366,
+    "fields": {
+        "plane_id": "Frostmourne",
+        "start_date": "2018-06-15T05:00:00Z",
+        "end_date": "2018-06-15T14:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1367,
+    "fields": {
+        "plane_id": "Ashbringer",
+        "start_date": "2018-04-05T13:00:00Z",
+        "end_date": "2018-04-05T22:00:00Z",
+        "src_airport": "CPH",
+        "dest_airport": "SOF"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1368,
+    "fields": {
+        "plane_id": "Ashbringer",
+        "start_date": "2018-04-14T05:00:00Z",
+        "end_date": "2018-04-14T11:00:00Z",
+        "src_airport": "SOF",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1369,
+    "fields": {
+        "plane_id": "Ashbringer",
+        "start_date": "2018-04-20T21:00:00Z",
+        "end_date": "2018-04-21T04:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "MHP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1370,
+    "fields": {
+        "plane_id": "Ashbringer",
+        "start_date": "2018-04-29T20:00:00Z",
+        "end_date": "2018-04-30T00:00:00Z",
+        "src_airport": "MHP",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1371,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-04-09T09:00:00Z",
+        "end_date": "2018-04-09T18:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1372,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-04-17T16:00:00Z",
+        "end_date": "2018-04-18T01:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "LJU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1373,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-04-27T01:00:00Z",
+        "end_date": "2018-04-27T09:00:00Z",
+        "src_airport": "LJU",
+        "dest_airport": "HEL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1374,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-05-03T00:00:00Z",
+        "end_date": "2018-05-03T04:00:00Z",
+        "src_airport": "HEL",
+        "dest_airport": "DUB"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1375,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-05-13T19:00:00Z",
+        "end_date": "2018-05-14T00:00:00Z",
+        "src_airport": "DUB",
+        "dest_airport": "AMS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1376,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-05-22T11:00:00Z",
+        "end_date": "2018-05-22T19:00:00Z",
+        "src_airport": "AMS",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1377,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-05-30T11:00:00Z",
+        "end_date": "2018-05-30T19:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "SJJ"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1378,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-06-05T05:00:00Z",
+        "end_date": "2018-06-05T10:00:00Z",
+        "src_airport": "SJJ",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1379,
+    "fields": {
+        "plane_id": "Doomhammer",
+        "start_date": "2018-06-11T01:00:00Z",
+        "end_date": "2018-06-11T08:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1380,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-04-09T18:00:00Z",
+        "end_date": "2018-04-10T00:00:00Z",
+        "src_airport": "BUD",
+        "dest_airport": "WAW"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1381,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-04-15T02:00:00Z",
+        "end_date": "2018-04-15T10:00:00Z",
+        "src_airport": "WAW",
+        "dest_airport": "VNO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1382,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-04-24T21:00:00Z",
+        "end_date": "2018-04-25T07:00:00Z",
+        "src_airport": "VNO",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1383,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-05-05T02:00:00Z",
+        "end_date": "2018-05-05T09:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "N/A"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1384,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-05-11T09:00:00Z",
+        "end_date": "2018-05-11T18:00:00Z",
+        "src_airport": "N/A",
+        "dest_airport": "ZAG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1385,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-05-18T01:00:00Z",
+        "end_date": "2018-05-18T11:00:00Z",
+        "src_airport": "ZAG",
+        "dest_airport": "FCO"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1386,
+    "fields": {
+        "plane_id": "Argus",
+        "start_date": "2018-05-27T14:00:00Z",
+        "end_date": "2018-05-27T18:00:00Z",
+        "src_airport": "FCO",
+        "dest_airport": "PRG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1387,
+    "fields": {
+        "plane_id": "Azeroth",
+        "start_date": "2018-04-08T01:00:00Z",
+        "end_date": "2018-04-08T09:00:00Z",
+        "src_airport": "CDG",
+        "dest_airport": "ARN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1388,
+    "fields": {
+        "plane_id": "Azeroth",
+        "start_date": "2018-04-12T16:00:00Z",
+        "end_date": "2018-04-12T23:00:00Z",
+        "src_airport": "ARN",
+        "dest_airport": "MAD"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1389,
+    "fields": {
+        "plane_id": "Azeroth",
+        "start_date": "2018-04-23T21:00:00Z",
+        "end_date": "2018-04-24T02:00:00Z",
+        "src_airport": "MAD",
+        "dest_airport": "LIS"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1390,
+    "fields": {
+        "plane_id": "Azeroth",
+        "start_date": "2018-05-03T01:00:00Z",
+        "end_date": "2018-05-03T06:00:00Z",
+        "src_airport": "LIS",
+        "dest_airport": "OSL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1391,
+    "fields": {
+        "plane_id": "Azeroth",
+        "start_date": "2018-05-09T14:00:00Z",
+        "end_date": "2018-05-09T20:00:00Z",
+        "src_airport": "OSL",
+        "dest_airport": "TXL"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1392,
+    "fields": {
+        "plane_id": "Azeroth",
+        "start_date": "2018-05-15T09:00:00Z",
+        "end_date": "2018-05-15T13:00:00Z",
+        "src_airport": "TXL",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1393,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-04-07T23:00:00Z",
+        "end_date": "2018-04-08T03:00:00Z",
+        "src_airport": "PRG",
+        "dest_airport": "RIX"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1394,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-04-16T00:00:00Z",
+        "end_date": "2018-04-16T06:00:00Z",
+        "src_airport": "RIX",
+        "dest_airport": "LHR"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1395,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-04-23T01:00:00Z",
+        "end_date": "2018-04-23T09:00:00Z",
+        "src_airport": "LHR",
+        "dest_airport": "VIE"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1396,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-04-29T08:00:00Z",
+        "end_date": "2018-04-29T17:00:00Z",
+        "src_airport": "VIE",
+        "dest_airport": "BRU"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1397,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-05-06T22:00:00Z",
+        "end_date": "2018-05-07T06:00:00Z",
+        "src_airport": "BRU",
+        "dest_airport": "ATH"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1398,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-05-13T06:00:00Z",
+        "end_date": "2018-05-13T10:00:00Z",
+        "src_airport": "ATH",
+        "dest_airport": "SKP"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1399,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-05-18T11:00:00Z",
+        "end_date": "2018-05-18T19:00:00Z",
+        "src_airport": "SKP",
+        "dest_airport": "BEG"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1400,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-05-23T08:00:00Z",
+        "end_date": "2018-05-23T12:00:00Z",
+        "src_airport": "BEG",
+        "dest_airport": "BRN"
+    }
+},
+{
+    "model": "flights.flight",
+    "pk": 1401,
+    "fields": {
+        "plane_id": "Draenor",
+        "start_date": "2018-06-02T15:00:00Z",
+        "end_date": "2018-06-03T00:00:00Z",
+        "src_airport": "BRN",
+        "dest_airport": "CPH"
+    }
+}
+]
