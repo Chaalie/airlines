@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext as _
+from pytz import timezone
 
 class Country(models.Model):
     name = models.CharField(max_length=64)
@@ -40,7 +41,7 @@ class Plane(models.Model):
         return self.aircraft.seats
 
     def __str__(self):
-        return f'{self.name} | {self.aircraft.name}'
+        return f'{self.name}, {self.aircraft.name}'
 
 class Airport(models.Model):
     id   = models.CharField(max_length=3, primary_key=True)
@@ -48,7 +49,7 @@ class Airport(models.Model):
     name = models.CharField(max_length=128)
 
     def __str__(self):
-        return f'{self.id} | {self.name}'
+        return f'{self.id} - {self.name}'
 
     def clean(self):
         if self.id == 'N/A':
@@ -69,6 +70,14 @@ class Flight(models.Model):
 
     def __str__(self):
         return f'Flight: {self.connection} | {self.plane.name} | {self.start_date}/{self.end_date}'
+
+    @property
+    def start_date_pretty(self):
+        return self.start_date.astimezone(timezone('Poland')).strftime("%Y-%m-%d %H:%M:%S")
+
+    @property
+    def end_date_pretty(self):
+        return self.end_date.astimezone(timezone('Poland')).strftime("%Y-%m-%d %H:%M:%S")
 
     def clean(self):
         from datetime import timedelta

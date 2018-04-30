@@ -6,34 +6,81 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <ul>
+    <form action="{% url 'flight_list' %}" method="GET">
+        <input type="text" name="phrase" placeholder="Enter search phrase..." required>
+        <input type="submit" value="Search">
+    </form>
+    {% if flights.paginator.count == 0 %}
+        <span>No matching results</span>
+    {% else %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Departure airport</th>
+                <th>Departure date</th>
+                <th>Arrival Airport</th>
+                <th>Arrival date</th>
+                <th>Plane</th>
+            </tr>
+        </thead>
+        <tbody>
         {% for flight in flights %}
-        <li>{{flight}} {{flight.src_airport.city}}</li>
+            <tr>
+                <td>{{flight.id}}</td>
+                <td>{{flight.src_airport}}</td>
+                <td>{{flight.start_date_pretty}}</td>
+                <td>{{flight.dest_airport}}</td>
+                <td>{{flight.end_date_pretty}}</td>
+                <td>{{flight.plane}}</td>
+            </tr>
         {% endfor %}
+        </tbody>
+    </table>
 
-        {% if flights.has_other_pages %}
-        <ul class="pagination pagination-sm justify-content-center">
-            {% if flights.has_previous %}
-            <li class="page-item"><a class="page-link" href="{% url_GET_params page=flights.previous_page_number %}">&laquo;</a></li>
-            {% else %}
-            <li class="page-item disabled"><a class="page-link" href="#"><span>&laquo;</span></a></li>
+    {% if flights.has_other_pages %}
+    <ul class="pagination pagination-sm justify-content-center">
+        {% if flights.has_previous %}
+        <li class="page-item"><a class="page-link" href="{% url_GET_params page=flights.previous_page_number %}">&laquo;</a></li>
+        {% else %}
+        <li class="page-item disabled"><a class="page-link" href="#"><span>&laquo;</span></a></li>
+        {% endif %}
+
+        {% if 1 < flights.number|add:-3 %}
+            <li class="page-item"><a class="page-link" href="{% url_GET_params page=1 %}"><span>1</span></a></li>
+            {% if flights.number|add:-3 != flights.start_index|add:1 %}
+                <li class="page-item disabled"><a class="page-link" href="#"><span>...</span></a></li>
             {% endif %}
-            {% for i in flights.paginator.page_range %}
+        {% endif %}
+
+        {% for i in flights.paginator.page_range %}
             {% if flights.number|add:-3 <= i and i <= flights.number|add:3 %}
                 {% if flights.number == i %}
-                <li class="page-item active"><a class="page-link" href="#"><span>{{ i }} <span class="sr-only">(current)</span></span></a></li>
+                    <li class="page-item active"><a class="page-link" href="#"><span>{{ i }} <span class="sr-only">(current)</span></span></a></li>
                 {% else %}
-                <li class="page-item"><a class="page-link" href="{% url_GET_params page=i %}">{{ i }}</a></li>
+                    <li class="page-item"><a class="page-link" href="{% url_GET_params page=i %}">{{ i }}</a></li>
                 {% endif %}
             {% endif %}
-            {% endfor %}
-            {% if flights.has_next %}
-            <li class="page-item"><a class="page-link" href="{% url_GET_params page=flights.next_page_number %}">&raquo;</a></li>
-            {% else %}
-            <li class="page-item disabled"><a class="page-link" href="#"><span>&raquo;</span></a></li>
+        {% endfor %}
+
+        {% if flights.number|add:3 < flights.paginator.num_pages %}
+            {% if flights.number|add:3 != flights.paginator.num_pages|add:-1 %}
+                <li class="page-item disabled"><a class="page-link" href="#"><span>...</span></a></li>
             {% endif %}
-        </ul>
-        {{ flights.number }} of {{ flights.paginator.num_pages }}
+            <li class="page-item"><a class="page-link" href="{% url_GET_params page=flights.paginator.num_pages %}"><span>{{flights.paginator.num_pages}}</span></a></li>
         {% endif %}
+
+
+
+        {% if flights.has_next %}
+        <li class="page-item"><a class="page-link" href="{% url_GET_params page=flights.next_page_number %}">&raquo;</a></li>
+        {% else %}
+        <li class="page-item disabled"><a class="page-link" href="#"><span>&raquo;</span></a></li>
+        {% endif %}
+    </ul>
+    {{ flights.number }} of {{ flights.paginator.num_pages }}
+    {% endif %}
+
+    {% endif %}
 </body>
 </html>

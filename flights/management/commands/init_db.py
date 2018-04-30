@@ -77,8 +77,12 @@ class Command(BaseCommand):
                 hours = random.randint(a, b)
                 return timedelta(hours=hours)
 
+            def random_minutes():
+                minutes = random.randint(0, 5)
+                return timedelta(minutes=minutes*10)
+
             def random_elapsed_time(days_a=2, days_b=10, hours_a=0, hours_b=23):
-                return random_days(days_a, days_b) + random_hours(hours_a, hours_b)
+                return random_days(days_a, days_b) + random_hours(hours_a, hours_b) + random_minutes()
 
             aircrafts = list(Aircraft.objects.all())
             airports = list(Airport.objects.all())
@@ -90,11 +94,14 @@ class Command(BaseCommand):
                 plane_obj.full_clean()
                 plane_obj.save()
 
-                flights_num = random.randint(4, 10)
-                cities = random.sample(airports, flights_num + 1)
+                flights_num = random.randint(50, 75)
+                cities = random.choices(airports, k=flights_num+1)
+                while any(i == j for i, j in zip(cities, cities[1:])):
+                    random.shuffle(cities)
+
                 connections = list(zip(cities[:-1], cities[1:]))
-                start = datetime(2018, 4, 1, tzinfo=pytz.UTC)
-                end = datetime(2018, 4, 1, tzinfo=pytz.UTC)
+                start = datetime(2018, 1, 1, tzinfo=pytz.UTC)
+                end = datetime(2018, 1, 1, tzinfo=pytz.UTC)
                 for src, dest in connections:
                     start = end + random_elapsed_time()
                     end = start + random_hours(4, 10)
