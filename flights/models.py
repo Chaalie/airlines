@@ -2,6 +2,8 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext as _
 from pytz import timezone
+from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import User
 
 class Country(models.Model):
     name = models.CharField(max_length=64)
@@ -89,10 +91,17 @@ class Flight(models.Model):
             raise ValidationError(_('Airports are not different!'))
 
 
+# class User(AbstractUser):
+#     firstname = models.CharField(max_length=64)
+#     lastname  = models.CharField(max_length=64)
+
+#     def clean(self):
+#         cleaned_data = super().clean()
+
+
 class Ticket(models.Model):
-    flight     = models.ForeignKey(Flight, on_delete=models.CASCADE)
-    first_name = models.CharField(max_length=64)
-    last_name  = models.CharField(max_length=64)
+    flight = models.ForeignKey(Flight, on_delete=models.CASCADE)
+    passenger = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def clean(self):
         if self.flight.ticket_set.count() == self.flight.plane.seats:

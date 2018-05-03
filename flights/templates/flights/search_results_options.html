@@ -1,0 +1,18 @@
+{% load url_tags %}
+<form class="form-inline" action="{% url 'flight_list' %}" method="GET">
+    <div class="form-group">
+        <label for="selectOrder">Order by: </label>
+        {% query_string_to_form 'order' 'page' page=1 %}
+        <select class="form-control mx-sm-2" name="order" id="selectOrder" onchange="this.form.submit()">
+            {% if not request.GET.order %}
+            <option value="" disabled selected hidden>-----</option>
+            {% endif %}
+            <option value="id" {% if 'id' == request.GET.order %}selected{% endif %}>Flight ID</option>
+            <option value="start" {% if 'start' == request.GET.order %}selected{% endif %}>Departure date</option>
+            <option value="end" {% if 'end' == request.GET.order %}selected{% endif %}>Arrival date</option>
+            <option value="src" {% if 'src' == request.GET.order %}selected{% endif %}>Departure airport</option>
+            <option value="dest" {% if 'dest' == request.GET.order %}selected{% endif %}>Arrival airport</option>
+            <option value="plane" {% if 'plane' == request.GET.order %}selected{% endif %}>Plane</option>
+        </select>
+    </div>
+</form>

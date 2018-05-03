@@ -1,0 +1,57 @@
+{% load url_tags %}
+{% if flights.has_other_pages %}
+    <div class="d-flex flex-nowrap align-items-baseline">
+    <ul class="pagination pagination-sm ml-5" id="search-navbar">
+    {% if flights.has_previous %}
+        <li class="page-item"><a class="page-link" href="{% query_string page=flights.previous_page_number %}">&laquo;</a></li>
+    {% else %}
+        <li class="page-item disabled"><a class="page-link" href="#"><span>&laquo;</span></a></li>
+    {% endif %}
+
+    {% if 1 < flights.number|add:-3 %}
+        <li class="page-item"><a class="page-link" href="{% query_string page=1 %}"><span>1</span></a></li>
+        {% if flights.number|add:-3 != flights.start_index|add:1 %}
+            <li class="page-item disabled"><a class="page-link" href="#"><span>...</span></a></li>
+        {% endif %}
+    {% endif %}
+
+    {% for i in flights.paginator.page_range %}
+        {% if flights.number|add:-3 <= i and i <= flights.number|add:3 %}
+            {% if flights.number == i %}
+            <li class="page-item active"><a class="page-link" href="#"><span>{{ i }}<span class="sr-only">(current)</span></span></a></li>
+            {% else %}
+            <li class="page-item"><a class="page-link" href="{% query_string page=i %}">{{ i }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    {% if flights.number|add:3 < flights.paginator.num_pages %}
+        {% if flights.number|add:3 != flights.paginator.num_pages|add:-1 %}
+            <li class="page-item disabled"><a class="page-link" href="#"><span>...</span></a></li>
+        {% endif %}
+        <li class="page-item"><a class="page-link" href="{% query_string page=flights.paginator.num_pages %}"><span>{{flights.paginator.num_pages}}</span></a></li>
+    {% endif %}
+
+    {% if flights.has_next %}
+        <li class="page-item"><a class="page-link" href="{% query_string page=flights.next_page_number %}">&raquo;</a></li>
+    {% else %}
+        <li class="page-item disabled"><a class="page-link" href="#"><span>&raquo;</span></a></li>
+    {% endif %}
+    </ul>
+    <!-- <span class="ml-2">page {{ flights.number }} of {{ flights.paginator.num_pages }}</span> -->
+    <form class="form-inline ml-auto mr-5" id="per-page" action="{% url 'flight_list' %}" method="GET">
+        <div class="form-group">
+            <label for="selectPerPage">Per page:</label>
+            {% query_string_to_form 'per_page' %}
+            <select class="form-control mx-sm-2" name="per_page" id="selectPerPage" onchange="this.form.submit()">
+                {% if not request.GET.per_page %}
+                <option value="" disabled selected hidden>25</option>
+                {% endif %}
+                <option value="10" {% if '10' == request.GET.per_page %}selected{% endif %}>10</option>
+                <option value="25" {% if '25' == request.GET.per_page %}selected{% endif %}>25</option>
+                <option value="50" {% if '50' == request.GET.per_page %}selected{% endif %}>50</option>
+            </select>
+        </div>
+    </form>
+    </div>
+{% endif %}

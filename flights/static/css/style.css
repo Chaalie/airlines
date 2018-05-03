@@ -1,0 +1,45 @@
+#content-container {
+    width: 90%;
+    background-color: white;
+    min-height: 100%;
+}
+
+#content-container * {
+    margin: .2rem .2rem .2rem .2rem;
+}
+
+#search-navbar * {
+    margin: 0;
+}
+
+#results-container > table {
+    width: 90%;
+}
+
+#results-container td {
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("/static/images/background2.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-page-button {
+    font-size: 1.5rem;
+}
+
+#main-page-input {
+    font-size: 2rem;
+}

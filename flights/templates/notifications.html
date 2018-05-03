@@ -1,0 +1,8 @@
+{% if messages %}
+    {% for msg in messages %}
+    <div class="alert alert-{{msg.tags}} d-flex justify-content-center mb-0">
+            <span class="text-center ml-auto">{{msg}}</span>
+            <a href="#" class="close ml-auto" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+    {% endfor %}
+{% endif %}

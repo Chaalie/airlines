@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex flex-column align-items-center mx-auto my-0" id="content-container">
+    <div class="my-4 container">
+        <h1 class="display-4">Register new account</h1>
+    </div>
+    <form class="w-25 mt3" method="POST">
+        {% csrf_token %}
+        {% for hidden_field in form.hidden_fields %}
+            {{ hidden_field }}
+        {% endfor %}
+        {% if form.non_field_errors %}
+            <div class="alert alert-danger" role="alert">
+                {% for error in form.non_field_errors %}
+                {{ error }}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% for field in form.visible_fields %}
+            <div class="form-group">
+                {{ field.label_tag }}
+                {% if form.is_bound %}
+                    {% if field.errors %}
+                        <input type="text" name="{{field.name}}" class="form-control form-control-lg is-invalid">
+                    {% for error in field.errors %}
+                        <div class="invalid-feedback">
+                            {{ error }}
+                        </div>
+                    {% endfor %}
+                    {% else %}
+                        <input type="text" name="{{field.name}}" class="form-control form-control-lg is-valid">
+                    {% endif %}
+                {% else %}
+                    <input type="text" name="{{field.name}}" class="form-control form-control-lg">
+                {% endif %}
+                {% if field.help_text %}
+                    {% autoescape off %}
+                    <small class="form-text text-muted">{{ field.help_text }}</small>
+                    {% endautoescape %}
+                {% endif %}
+            </div>
+        {% endfor %}
+        <input class="btn btn-success btn-lg my-2 my-sm-0" style="margin-top: .3rem !important" type="submit" value="Register">
+    </form>
+</div>
+{% endblock %}
+
