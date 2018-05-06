@@ -1,0 +1,527 @@
+{
+    "6": {
+        "iso2": "AL",
+        "iso3": "ALB",
+        "name": "Albania",
+        "full_name": "Republic of Albania",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Tirana International Airport Mother Teresa",
+                "city": "Tirana",
+                "iata": "TIA",
+                "icao": "LATI"
+            }
+        ]
+    },
+    "13": {
+        "iso2": "AT",
+        "iso3": "AUT",
+        "name": "Austria",
+        "full_name": "Republic of Austria",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Vienna International Airport",
+                "city": "Vienna",
+                "iata": "VIE",
+                "icao": "LOWW"
+            }
+        ]
+    },
+    "18": {
+        "iso2": "BA",
+        "iso3": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "full_name": "Bosnia and Herzegovina",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Sarajevo International Airport",
+                "city": "Sarajevo",
+                "iata": "SJJ",
+                "icao": "LQSA"
+            }
+        ]
+    },
+    "21": {
+        "iso2": "BE",
+        "iso3": "BEL",
+        "name": "Belgium",
+        "full_name": "Kingdom of Belgium",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Brussels Airport",
+                "city": "Brussels",
+                "iata": "BRU",
+                "icao": "EBBR"
+            }
+        ]
+    },
+    "23": {
+        "iso2": "BG",
+        "iso3": "BGR",
+        "name": "Bulgaria",
+        "full_name": "Republic of Bulgaria",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Sofia Airport",
+                "city": "Sofia",
+                "iata": "SOF",
+                "icao": "LBSF"
+            }
+        ]
+    },
+    "36": {
+        "iso2": "BY",
+        "iso3": "BLR",
+        "name": "Belarus",
+        "full_name": "Republic of Belarus",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Minsk 1 Airport",
+                "city": "Minsk",
+                "iata": "MHP",
+                "icao": "UMMM"
+            }
+        ]
+    },
+    "43": {
+        "iso2": "CH",
+        "iso3": "CHE",
+        "name": "Switzerland",
+        "full_name": "Swiss Confederation",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Bern Belp Airport",
+                "city": "Bern",
+                "iata": "BRN",
+                "icao": "LSZB"
+            }
+        ]
+    },
+    "55": {
+        "iso2": "CZ",
+        "iso3": "CZE",
+        "name": "Czech Republic",
+        "full_name": "Czech Republic",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Václav Havel Airport Prague",
+                "city": "Prague",
+                "iata": "PRG",
+                "icao": "LKPR"
+            }
+        ]
+    },
+    "56": {
+        "iso2": "DE",
+        "iso3": "DEU",
+        "name": "Germany",
+        "full_name": "Federal Republic of Germany",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Berlin-Tegel International Airport",
+                "city": "Berlin",
+                "iata": "TXL",
+                "icao": "EDDT"
+            }
+        ]
+    },
+    "58": {
+        "iso2": "DK",
+        "iso3": "DNK",
+        "name": "Denmark",
+        "full_name": "Kingdom of Denmark",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Copenhagen Kastrup Airport",
+                "city": "Copenhagen",
+                "iata": "CPH",
+                "icao": "EKCH"
+            }
+        ]
+    },
+    "63": {
+        "iso2": "EE",
+        "iso3": "EST",
+        "name": "Estonia",
+        "full_name": "Republic of Estonia",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Lennart Meri Tallinn Airport",
+                "city": "Tallinn",
+                "iata": "TLL",
+                "icao": "EETN"
+            }
+        ]
+    },
+    "67": {
+        "iso2": "ES",
+        "iso3": "ESP",
+        "name": "Spain",
+        "full_name": "Kingdom of Spain",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Adolfo Suárez Madrid–Barajas Airport",
+                "city": "Madrid",
+                "iata": "MAD",
+                "icao": "LEMD"
+            }
+        ]
+    },
+    "69": {
+        "iso2": "FI",
+        "iso3": "FIN",
+        "name": "Finland",
+        "full_name": "Republic of Finland",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Helsinki Vantaa Airport",
+                "city": "Helsinki",
+                "iata": "HEL",
+                "icao": "EFHK"
+            }
+        ]
+    },
+    "74": {
+        "iso2": "FR",
+        "iso3": "FRA",
+        "name": "France",
+        "full_name": "French Republic",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Charles de Gaulle International Airport",
+                "city": "Paris",
+                "iata": "CDG",
+                "icao": "LFPG"
+            }
+        ]
+    },
+    "76": {
+        "iso2": "GB",
+        "iso3": "GBR",
+        "name": "United Kingdom",
+        "full_name": "United Kingdom of Great Britain & Northern Ireland",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "London Heathrow Airport",
+                "city": "London",
+                "iata": "LHR",
+                "icao": "EGLL"
+            }
+        ]
+    },
+    "88": {
+        "iso2": "GR",
+        "iso3": "GRC",
+        "name": "Greece",
+        "full_name": "Hellenic Republic Greece",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Eleftherios Venizelos International Airport",
+                "city": "Athens",
+                "iata": "ATH",
+                "icao": "LGAV"
+            }
+        ]
+    },
+    "97": {
+        "iso2": "HR",
+        "iso3": "HRV",
+        "name": "Croatia",
+        "full_name": "Republic of Croatia",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Zagreb Airport",
+                "city": "Zagreb",
+                "iata": "ZAG",
+                "icao": "LDZA"
+            }
+        ]
+    },
+    "99": {
+        "iso2": "HU",
+        "iso3": "HUN",
+        "name": "Hungary",
+        "full_name": "Republic of Hungary",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Budapest Ferenc Liszt International Airport",
+                "city": "Budapest",
+                "iata": "BUD",
+                "icao": "LHBP"
+            }
+        ]
+    },
+    "101": {
+        "iso2": "IE",
+        "iso3": "IRL",
+        "name": "Ireland",
+        "full_name": "Ireland",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Dublin Airport",
+                "city": "Dublin",
+                "iata": "DUB",
+                "icao": "EIDW"
+            }
+        ]
+    },
+    "109": {
+        "iso2": "IT",
+        "iso3": "ITA",
+        "name": "Italy",
+        "full_name": "Italian Republic",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Leonardo da Vinci–Fiumicino Airport",
+                "city": "Rome",
+                "iata": "FCO",
+                "icao": "LIRF"
+            }
+        ]
+    },
+    "132": {
+        "iso2": "LT",
+        "iso3": "LTU",
+        "name": "Lithuania",
+        "full_name": "Republic of Lithuania",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Vilnius International Airport",
+                "city": "Vilnius",
+                "iata": "VNO",
+                "icao": "EYVI"
+            }
+        ]
+    },
+    "134": {
+        "iso2": "LV",
+        "iso3": "LVA",
+        "name": "Latvia",
+        "full_name": "Republic of Latvia",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Riga International Airport",
+                "city": "Riga",
+                "iata": "RIX",
+                "icao": "EVRA"
+            }
+        ]
+    },
+    "139": {
+        "iso2": "ME",
+        "iso3": "MNE",
+        "name": "Montenegro",
+        "full_name": "Republic of Montenegro",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Podgorica Airport",
+                "city": "Podgorica",
+                "iata": "TGD",
+                "icao": "LYPG"
+            }
+        ]
+    },
+    "143": {
+        "iso2": "MK",
+        "iso3": "MKD",
+        "name": "Macedonia",
+        "full_name": "Republic of Macedonia",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Skopje Alexander the Great Airport",
+                "city": "Skopje",
+                "iata": "SKP",
+                "icao": "LWSK"
+            }
+        ]
+    },
+    "165": {
+        "iso2": "NL",
+        "iso3": "NLD",
+        "name": "Netherlands",
+        "full_name": "Kingdom of the Netherlands",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Amsterdam Airport Schiphol",
+                "city": "Amsterdam",
+                "iata": "AMS",
+                "icao": "EHAM"
+            }
+        ]
+    },
+    "166": {
+        "iso2": "NO",
+        "iso3": "NOR",
+        "name": "Norway",
+        "full_name": "Kingdom of Norway",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Oslo Gardermoen Airport",
+                "city": "Oslo",
+                "iata": "OSL",
+                "icao": "ENGM"
+            }
+        ]
+    },
+    "178": {
+        "iso2": "PL",
+        "iso3": "POL",
+        "name": "Poland",
+        "full_name": "Republic of Poland",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Warsaw Chopin Airport",
+                "city": "Warsaw",
+                "iata": "WAW",
+                "icao": "EPWA"
+            }
+        ]
+    },
+    "183": {
+        "iso2": "PT",
+        "iso3": "PRT",
+        "name": "Portugal",
+        "full_name": "Portuguese Republic",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Lisbon Portela Airport",
+                "city": "Lisbon",
+                "iata": "LIS",
+                "icao": "LPPT"
+            }
+        ]
+    },
+    "188": {
+        "iso2": "RO",
+        "iso3": "ROU",
+        "name": "Romania",
+        "full_name": "Romania",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Henri Coandă International Airport",
+                "city": "Bucharest",
+                "iata": "OTP",
+                "icao": "LROP"
+            }
+        ]
+    },
+    "189": {
+        "iso2": "RS",
+        "iso3": "SRB",
+        "name": "Serbia",
+        "full_name": "Republic of Serbia",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Belgrade Nikola Tesla Airport",
+                "city": "Belgrade",
+                "iata": "BEG",
+                "icao": "LYBE"
+            }
+        ]
+    },
+    "190": {
+        "iso2": "RU",
+        "iso3": "RUS",
+        "name": "Russian Federation",
+        "full_name": "Russian Federation",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Sheremetyevo International Airport",
+                "city": "Moscow",
+                "iata": "SVO",
+                "icao": "UUEE"
+            }
+        ]
+    },
+    "196": {
+        "iso2": "SE",
+        "iso3": "SWE",
+        "name": "Sweden",
+        "full_name": "Kingdom of Sweden",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Stockholm-Arlanda Airport",
+                "city": "Stockholm",
+                "iata": "ARN",
+                "icao": "ESSA"
+            }
+        ]
+    },
+    "199": {
+        "iso2": "SI",
+        "iso3": "SVN",
+        "name": "Slovenia",
+        "full_name": "Republic of Slovenia",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Ljubljana Jože Pučnik Airport",
+                "city": "Ljubljana",
+                "iata": "LJU",
+                "icao": "LJLJ"
+            }
+        ]
+    },
+    "201": {
+        "iso2": "SK",
+        "iso3": "SVK",
+        "name": "Slovakia",
+        "full_name": "Slovakia (Slovak Republic)",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "M. R. Štefánik Airport",
+                "city": "Bratislava",
+                "iata": "BTS",
+                "icao": "LZIB"
+            }
+        ]
+    },
+    "227": {
+        "iso2": "UA",
+        "iso3": "UKR",
+        "name": "Ukraine",
+        "full_name": "Ukraine",
+        "continent": "EU",
+        "airports": [
+            {
+                "name": "Boryspil International Airport",
+                "city": "Kiev",
+                "iata": "KBP",
+                "icao": "UKBB"
+            }
+        ]
+    }
+}

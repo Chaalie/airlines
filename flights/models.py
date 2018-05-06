@@ -13,6 +13,11 @@ class Country(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+    class Meta:
+        verbose_name = "Country"
+        verbose_name_plural = "Countries"
+
+
 class City(models.Model):
     name    = models.CharField(max_length=64)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
@@ -20,13 +25,15 @@ class City(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+    class Meta:
+        verbose_name = "City"
+        verbose_name_plural = "Cities"
+
+
 class Aircraft(models.Model):
     producer = models.CharField(max_length=64)
     model    = models.CharField(max_length=64)
     seats    = models.IntegerField()
-
-    class Meta():
-        unique_together = ('producer', 'model')
 
     @property
     def name(self):
@@ -34,6 +41,12 @@ class Aircraft(models.Model):
 
     def __str__(self):
         return f'{self.name}'
+
+    class Meta:
+        verbose_name = "Aircraft"
+        verbose_name_plural = "Aircrafts"
+        unique_together = ('producer', 'model')
+
 
 class Plane(models.Model):
     name     = models.CharField(max_length=64, primary_key=True)
@@ -45,6 +58,11 @@ class Plane(models.Model):
 
     def __str__(self):
         return f'{self.name}, {self.aircraft.name}'
+
+    class Meta:
+        verbose_name = "Plane"
+        verbose_name_plural = "Planes"
+
 
 class Airport(models.Model):
     id   = models.CharField(max_length=3, primary_key=True)
@@ -61,6 +79,10 @@ class Airport(models.Model):
     def clean(self):
         if self.id == 'N/A':
             raise ValidationError(_('Starting date is earlier than the ending date!'))
+
+    class Meta:
+        verbose_name = "Airport"
+        verbose_name_plural = "Airports"
 
 
 class Flight(models.Model):
@@ -121,6 +143,11 @@ class Flight(models.Model):
         if self.src_airport == self.dest_airport:
             raise ValidationError(_('Airports are not different!'))
 
+    class Meta:
+        verbose_name = "Flight"
+        verbose_name_plural = "Flights"
+
+
 class Ticket(models.Model):
     flight = models.ForeignKey(Flight, on_delete=models.CASCADE, null=False)
     passenger = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
@@ -130,3 +157,7 @@ class Ticket(models.Model):
             raise ValidationError(_('Flight has already started!'))
         if self.flight.available_seats == 0:
             raise ValidationError(_('No seats available!'))
+
+    class Meta:
+        verbose_name = "Ticket"
+        verbose_name_plural = "Tickets"

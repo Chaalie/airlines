@@ -1,10 +1,13 @@
-from django.core.management import BaseCommand
-from flights.models import *
 from django.db import transaction
+from django.core.management import BaseCommand, call_command
+
+from flights.models import *
+
 import pytz
 import csv
 import json
 import random
+import os
 from datetime import datetime, timedelta
 
 class Command(BaseCommand):
@@ -12,7 +15,6 @@ class Command(BaseCommand):
     aircrafts_names = []
     airports_data = {}
     aircrafts_data = {}
-
 
     def handle(self, *args, **options):
         def clear_db():
@@ -24,12 +26,17 @@ class Command(BaseCommand):
             Flight.objects.all().delete()
             Ticket.objects.all().delete()
 
-        with open('./data_parsing/data/aircraft_names.csv', 'r') as f:
+        call_command('makemigrations')
+        call_command('migrate')
+
+        path = os.path.abspath(os.path.dirname(__file__))
+
+        with open(os.path.join(path, 'data', 'aircraft_names.csv'), 'r') as f:
             names = next(csv.reader(f, delimiter=','))[0]
             aircrafts_names = [x for x in names.split(';') if x]
-        with open('./data_parsing/data/aircrafts.json', 'r') as f:
+        with open(os.path.join(path, 'data', 'aircrafts.json'), 'r') as f:
             aircrafts_data = json.loads(f.read())
-        with open('./data_parsing/data/airports_eu.json', 'r') as f:
+        with open(os.path.join(path, 'data', 'airports_eu.json'), 'r') as f:
             airports_data = json.loads(f.read())
 
         clear_db()

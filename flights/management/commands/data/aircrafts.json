@@ -1,0 +1,32 @@
+[
+	{
+		"producer": "Boeing",
+		"model": "737",
+		"seats": "30"
+	},
+	{
+		"producer": "Airbus",
+		"model": "A320",
+		"seats": "40"
+	},
+	{
+		"producer": "Airbus",
+		"model": "A330",
+		"seats": "40"
+	},
+	{
+		"producer": "Boeing",
+		"model": "777",
+		"seats": "50"
+	},
+	{
+		"producer": "Embraer",
+		"model": "E170",
+		"seats": "20"
+	},
+	{
+		"producer": "Bombardier",
+		"model": "CRJ700",
+		"seats": "20"
+	}
+]
