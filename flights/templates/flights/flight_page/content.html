@@ -34,7 +34,7 @@
             <div class="card border-0">
                 <div class="card-header m-0 p-0 bg-transparent" id="headingOne">
                     <button class="btn btn-lg btn-outline-success m-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h5><strong>Show passenger list</strong></h5>
+                        <strong>Show passenger list</strong>
                     </button>
                 </div>
                 <div id="collapseOne" class="collapse mt-2 mx-0" aria-labelledby="headingOne" data-parent="#accordion">
@@ -53,7 +53,7 @@
                                 <td>{{ticket.passenger.first_name}} {{ticket.passenger.last_name}}</td>
                             </tr>
                             {% empty %}
-                            <tr><td colspan="6"><p class="text-center">No tickets sold</p></td></tr>
+                            <tr><td colspan="2"><p class="text-center">No tickets sold</p></td></tr>
                             {% endfor %}
                         </tbody>
                         </table>
