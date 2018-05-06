@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
+{% extends 'base_no_search.html' %}
 {% block content %}
-<div id="main-page-body" class='d-flex justify-content-center h-100'>
+<div id="main-page-body" class='d-flex justify-content-center h-100 my-auto'>
     <form class="form-inline mx-auto" action="{% url 'flight_list' %}" method="GET">
         <input id="main-page-input" class="form-control form-control-lg mr-lg-2 input-lg" type="text" name="phrase" placeholder="Enter search phrase..." required>
         <button id="main-page-button" class="btn btn-success btn-lg my-2 my-lg-0" type="submit">Search</button>

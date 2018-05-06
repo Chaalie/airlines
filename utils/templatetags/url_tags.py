@@ -18,3 +18,7 @@ def query_string_to_form(context, *args, **kwargs):
     inputs = '\n'.join([f'<input type="hidden" name={k} value={v}>'
                       for k, v in params.items()])
     return mark_safe(inputs)
+
+@register.filter(name='addclass')
+def addclass(value, arg):
+    return value.as_widget(attrs={'class': arg})

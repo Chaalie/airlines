@@ -11,9 +11,11 @@
     <title>Flights</title>
 </head>
 <body>
+    <div class="page-wrapper">
     {% include 'notifications.html' %}
-    {% include 'flights/main_navbar.html' %}
+    {% include 'navbar_with_search.html' %}
     {% block content %} {% endblock %}
     {% include 'footer.html' %}
+    </div>
 </body>
 </html>

@@ -1,0 +1,44 @@
+{% extends 'base_with_search.html' %}
+{% block content %}
+{% load url_tags %}
+<div class="d-flex flex-column mx-auto my-0" id="content-container">
+    {% include 'flights/options.html' %}
+    <div class="d-flex justify-content-center" id="results-container">
+    <table class="table table-striped table-sm table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Departure airport</th>
+                <th>Departure date</th>
+                <th>Arrival Airport</th>
+                <th>Arrival date</th>
+                <th>Plane</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for flight in flights %}
+                <tr>
+                    {% if flight.finished %}
+                    <td class="table-danger"></td>
+                    {% elif flight.in_air %}
+                    <td class="table-warning"></td>
+                    {% else %}
+                    <td class="table-success"></td>
+                    {% endif %}
+                    <td><a href="{% url 'flight_page' flight.id %}">{{flight.id}}</a></td>
+                    <td><a href="{% url 'airport_page' flight.src_airport.id %}">{{flight.src_airport}}</a></td>
+                    <td>{{flight.start_date_pretty}}</td>
+                    <td><a href="{% url 'airport_page' flight.dest_airport.id %}">{{flight.dest_airport}}</a></td>
+                    <td>{{flight.end_date_pretty}}</td>
+                    <td><a href="{% url 'plane_page' flight.plane.name %}">{{flight.plane}}</a></td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="6"><p class="text-center">No matching results</p></td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    {% include 'flights/pagination.html' %}
+</div>
+{% endblock %}

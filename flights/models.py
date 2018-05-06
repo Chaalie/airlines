@@ -1,9 +1,10 @@
-from django.db import models
+from django.db import models, transaction
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext as _
-from pytz import timezone
-from django.contrib.auth.models import AbstractUser
+from pytz import timezone, UTC
 from django.contrib.auth.models import User
+from datetime import datetime
+from django.shortcuts import get_object_or_404
 
 class Country(models.Model):
     name = models.CharField(max_length=64)
@@ -53,6 +54,10 @@ class Airport(models.Model):
     def __str__(self):
         return f'{self.id} - {self.name}'
 
+    @property
+    def location(self):
+        return f'{self.city}, {self.city.country}'
+
     def clean(self):
         if self.id == 'N/A':
             raise ValidationError(_('Starting date is earlier than the ending date!'))
@@ -70,6 +75,14 @@ class Flight(models.Model):
     def connection(self):
         return f'{self.src_airport.id}-{self.dest_airport.id}'
 
+    @property
+    def seats(self):
+        return self.plane.seats
+
+    @property
+    def available_seats(self):
+        return self.seats - Ticket.objects.filter(flight=self.id).count()
+
     def __str__(self):
         return f'Flight: {self.connection} | {self.plane.name} | {self.start_date}/{self.end_date}'
 
@@ -81,6 +94,24 @@ class Flight(models.Model):
     def end_date_pretty(self):
         return self.end_date.astimezone(timezone('Poland')).strftime("%Y-%m-%d %H:%M:%S")
 
+    @property
+    def finished(self):
+        now = datetime.utcnow().replace(tzinfo=UTC)
+        return self.end_date < now
+
+    @property
+    def in_air(self):
+        now = datetime.utcnow().replace(tzinfo=UTC)
+        return self.start_date < now and now < self.end_date
+
+    @classmethod
+    @transaction.atomic
+    def buy_ticket(cls, flight_id, user):
+        flight = get_object_or_404(cls.objects.select_for_update(), pk=flight_id)
+        ticket = Ticket(flight=flight, passenger=user)
+        ticket.clean()
+        ticket.save()
+
     def clean(self):
         from datetime import timedelta
         if self.start_date > self.end_date:
@@ -90,19 +121,12 @@ class Flight(models.Model):
         if self.src_airport == self.dest_airport:
             raise ValidationError(_('Airports are not different!'))
 
-
-# class User(AbstractUser):
-#     firstname = models.CharField(max_length=64)
-#     lastname  = models.CharField(max_length=64)
-
-#     def clean(self):
-#         cleaned_data = super().clean()
-
-
 class Ticket(models.Model):
-    flight = models.ForeignKey(Flight, on_delete=models.CASCADE)
-    passenger = models.ForeignKey(User, on_delete=models.CASCADE)
+    flight = models.ForeignKey(Flight, on_delete=models.CASCADE, null=False)
+    passenger = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
 
     def clean(self):
-        if self.flight.ticket_set.count() == self.flight.plane.seats:
+        if self.flight.in_air or self.flight.finished:
+            raise ValidationError(_('Flight has already started!'))
+        if self.flight.available_seats == 0:
             raise ValidationError(_('No seats available!'))
