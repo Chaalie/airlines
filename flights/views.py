@@ -11,12 +11,13 @@ from django.core.exceptions import ValidationError, PermissionDenied
 from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import csrf_exempt
 from datetime import datetime, timedelta
-import pytz
+from django.core.serializers import serialize
 
 from .forms import RegistrationForm
 from .models import *
 
 from utils.response import remove_empty_lines
+import pytz
 
 @remove_empty_lines
 def main_page(request):
@@ -155,21 +156,26 @@ def ajax_change_crew(request):
             fli.crew = crw
             fli.full_clean()
             fli.save()
-    except ValidationError:
-        return HttpResponse('', status=406)
+    except ValidationError as e:
+        return HttpResponse('', status=400)
 
     return HttpResponse('OK')
 
 @require_GET
 @csrf_exempt
-def ajax_get_flights(request):
-    try:
-        tz = pytz.timezone('Europe/Warsaw')
-        frm = tz.localize(datetime.strptime(request.GET['date'], '%Y-%m-%d'))
-        to = frm + timedelta(days=1)
-        objs = Flight.objects.filter(start_date__gte=frm, start_date__lt=to).order_by('start_date')
-    except:
-        return HttpResponse('', status=404)
+def ajax_get_flight(request):
+    objs = Flight.objects.all()
+    if 'date' in request.GET:
+        try:
+            tz = pytz.timezone('Europe/Warsaw')
+            frm = tz.localize(datetime.strptime(request.GET['date'], '%Y-%m-%d'))
+            to = frm + timedelta(days=1)
+            objs = objs.filter(start_date__gte=frm, start_date__lt=to).order_by('start_date')
+        except:
+            return HttpResponse('', status=404)
+    if 'id' in request.GET:
+        ids = list(request.GET['id'].split(','))
+        objs = objs.filter(pk__in=ids)
     flights = []
     for f in objs:
         flights.append({
@@ -181,28 +187,25 @@ def ajax_get_flights(request):
             'captain': str(f.crew),
         })
 
-    return JsonResponse({'flights': flights})
+    return JsonResponse(flights, safe=False, json_dumps_params={'indent': 4})
 
 @require_GET
 @csrf_exempt
-def ajax_set_form(request):
-    if any(s not in request.GET for s in ['flight_id', 'username', 'password']):
-        return HttpResponse('', status=400)
-    if not authenticate(username=request.GET['username'], password=request.GET['password']):
-        raise PermissionDenied
+def ajax_get_crew(request):
+    objs = Crew.objects.all()
+    if 'id' in request.GET:
+        ids = list(request.GET['id'].split(','))
+        objs = objs.filter(pk__in=ids)
 
-    f = get_object_or_404(Flight, id=request.GET['flight_id'])
-    f_info = {
-        'id': f.id,
-        'departure_airport': str(f.src_airport),
-        'departure_date': f.start_date_pretty,
-        'arrival_airport': str(f.dest_airport),
-        'arrival_date': f.end_date_pretty,
-        'captain': str(f.crew),
-    }
-    crews = [{'id': c.id, 'name': str(c)} for c in Crew.objects.all()]
+    crews = []
+    for c in objs:
+        crews.append({
+            'id': c.id,
+            'captain_firstname': c.captain_firstname,
+            'captain_lastname': c.captain_lastname,
+        })
 
-    return JsonResponse({'flight_info': f_info, 'crews': crews})
+    return JsonResponse(crews, safe=False, json_dumps_params={'indent': 4})
 
 @require_GET
 @csrf_exempt

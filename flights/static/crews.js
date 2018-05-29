@@ -9,26 +9,24 @@ function add_notification(msg, where)
     );
 }
 
-function display_form(data)
+function display_form(flight, crews)
 {
-    fli = data.flight_info;
-    $('#form-id').text(fli.id);
-    $('#form-departure-airport').text(fli.departure_airport);
-    $('#form-departure-date').text(fli.departure_date);
-    $('#form-arrival-airport').text(fli.arrival_airport);
-    $('#form-arrival-date').text(fli.arrival_date);
-    $('#form-captain').text(fli.captain);
+    $('#form-id').text(flight.id);
+    $('#form-departure-airport').text(flight.departure_airport);
+    $('#form-departure-date').text(flight.departure_date);
+    $('#form-arrival-airport').text(flight.arrival_airport);
+    $('#form-arrival-date').text(flight.arrival_date);
+    $('#form-captain').text(flight.captain);
 
-    crews = data.crews;
     $('#select-crew').empty();
     $('#select-crew').append(
-        `<option value="" selected disabled hidden>${fli.captain}</option>`
+        `<option value="" selected disabled hidden>${flight.captain}</option>`
     );
     for (var i in crews)
     {
         c = crews[i];
         $('#select-crew').append(
-            `<option value="${c.id}">${c.name}</option>`
+            `<option value="${c.id}">${c.captain_firstname} ${c.captain_lastname}</option>`
         );
     }
     $('#crew-form').show();
@@ -93,18 +91,25 @@ function get_user()
 
 function set_form(flight_id, row)
 {
-    data = get_user();
-    data['flight_id'] = flight_id;
-    $.get('/ajax/set_form',
-                 data,
-                 function(result) {
-                     display_form(result);
-                     $('.table-info').removeClass('table-info');
-                     $(row).addClass('table-info');
-                 }
-    ).fail(function() {
-        // msg = {'tags': 'danger', 'info': 'Whoops! Something went wrong...'};
-        // add_notification(msg, '#main-notifications');
+    var flight;
+    var crews;
+    $.when(
+        $.get('/ajax/get_flight',
+               {'id': flight_id},
+               function(result) {
+                   flight = result[0];
+               }
+        ),
+        $.get('/ajax/get_crew',
+               {},
+               function(result) {
+                   crews = result;
+               }
+        )
+    ).then(function () {
+        display_form(flight, crews);
+        $('.table-info').removeClass('table-info');
+        $(row).addClass('table-info');
     });
 }
 
@@ -130,11 +135,11 @@ function display_flights(flights)
 
 function get_and_display_flights(date)
 {
-    $.get('/ajax/get_flights',
+    $.get('/ajax/get_flight',
            {'date': date},
            function(result) {
                $('#crew-form').hide();
-               display_flights(result.flights);
+               display_flights(result);
            }
     ).fail(function() {
         // msg = {'tags': 'danger', 'info': 'Whoops! Something went wrong...'};
@@ -144,10 +149,10 @@ function get_and_display_flights(date)
 
 function refresh_flights(date, flight_id)
 {
-    $.get('/ajax/get_flights',
+    $.get('/ajax/get_flight',
            {'date': date},
            function(result) {
-               display_flights(result.flights);
+               display_flights(result);
                obj = $(`td:contains(${flight_id})`).parent()
                obj.addClass('table-info');
            }
@@ -201,8 +206,6 @@ $(document).on('dblclick', '#flights tr', function()
 {
     var flight_id = $(this).children('td:first').text();
     set_form(flight_id, this);
-    {
-    }
 });
 
 $().ready(function() {

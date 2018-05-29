@@ -175,7 +175,6 @@ class Flight(models.Model):
             raise ValidationError(_('Flight should take at least 4 hours!'))
         if self.src_airport == self.dest_airport:
             raise ValidationError(_('Airports are not different!'))
-        print(self.created, self.crew)
         if self.created == True and self.crew is None:
             raise ValidationError(_('You can not unassign crew, without specifying new one!'))
         if self.crew is not None:

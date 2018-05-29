@@ -1,0 +1,71 @@
+[
+{
+    "model": "flights.country",
+    "pk": "POL",
+    "fields": {
+        "name": "Poland"
+    }
+},
+{
+    "model": "flights.country",
+    "pk": "DEU",
+    "fields": {
+        "name": "Germany"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 1,
+    "fields": {
+        "name": "Warsaw",
+        "country": "POL"
+    }
+},
+{
+    "model": "flights.city",
+    "pk": 2,
+    "fields": {
+        "name": "Berlin",
+        "country": "DEU"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "WAW",
+    "fields": {
+        "city": 1,
+        "name": "Warsaw Chopin Airport"
+    }
+},
+{
+    "model": "flights.airport",
+    "pk": "TXL",
+    "fields": {
+        "city": 2,
+        "name": "Berlin-Tegel International Airport"
+    }
+},
+{
+    "model": "flights.aircraft",
+    "pk": 1,
+    "fields": {
+        "producer": "Boeing",
+        "model": "737",
+        "seats": 30
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Batman",
+    "fields": {
+        "aircraft": 1
+    }
+},
+{
+    "model": "flights.plane",
+    "pk": "Superman",
+    "fields": {
+        "aircraft": 1
+    }
+}
+]
