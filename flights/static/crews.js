@@ -182,7 +182,7 @@ function change_crew(crew_id, flight_id)
                 msg.info = 'Given flight or crew is invalid!';
                 break;
             case 406:
-                msg.info = 'Crew is already assigned to flight in that time!';
+                msg.info = 'Crew is already assigned to flight at that time!';
                 break;
             default:
                 msg.info = 'Whoops! Something went wrong...';
