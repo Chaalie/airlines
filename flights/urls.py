@@ -14,4 +14,8 @@ urlpatterns = [
     path('registration/', flights.views.registration_view, name='registration'),
     path('airports/<slug:airport_id>', flights.views.airport_page, name='airport_page'),
     url(r'^planes/(?P<plane_id>[a-zA-Z\']+)$', flights.views.plane_page, name='plane_page'),
+    path('ajax/get_flights', flights.views.ajax_get_flights, name='ajax_get_flights'),
+    path('ajax/change_crew', flights.views.ajax_change_crew, name='ajax_change_crew'),
+    path('ajax/set_form', flights.views.ajax_set_form, name='ajax_set_form'),
+    path('ajax/login', flights.views.ajax_login, name='ajax_login'),
 ]

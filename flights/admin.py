@@ -8,5 +8,6 @@ admin.site.register(Ticket)
 admin.site.register(Airport)
 admin.site.register(Aircraft)
 admin.site.register(Plane)
+admin.site.register(Crew)
 
 # Register your models here.

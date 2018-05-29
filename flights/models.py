@@ -5,6 +5,7 @@ from pytz import timezone, UTC
 from django.contrib.auth.models import User
 from datetime import datetime
 from django.shortcuts import get_object_or_404
+from django.db.models import Q
 
 class Country(models.Model):
     name = models.CharField(max_length=64)
@@ -85,6 +86,19 @@ class Airport(models.Model):
         verbose_name_plural = "Airports"
 
 
+class Crew(models.Model):
+    captain_firstname = models.CharField(max_length=64)
+    captain_lastname = models.CharField(max_length=64)
+
+    def __str__(self):
+        return f'{self.captain_firstname} {self.captain_lastname}'
+
+    class Meta:
+        verbose_name = 'Crew'
+        verbose_name_plural = 'Crews'
+        unique_together = ('captain_firstname', 'captain_lastname')
+
+
 class Flight(models.Model):
  #   flight_id   = models.IntegerField(primary_key=True)
     plane        = models.ForeignKey(Plane, on_delete=models.CASCADE)
@@ -92,6 +106,8 @@ class Flight(models.Model):
     end_date     = models.DateTimeField()
     src_airport  = models.ForeignKey(Airport, related_name="src_airport", on_delete=models.CASCADE)
     dest_airport = models.ForeignKey(Airport, related_name="dest_airport", on_delete=models.CASCADE)
+    crew         = models.ForeignKey(Crew, null=True, blank=True, on_delete=models.SET_NULL)
+    created      = models.BooleanField(default=False, editable=False)
 
     @property
     def connection(self):
@@ -126,6 +142,14 @@ class Flight(models.Model):
         now = datetime.utcnow().replace(tzinfo=UTC)
         return self.start_date < now and now < self.end_date
 
+    @property
+    def prev_crew(self):
+        return self._prev_crew
+
+    @prev_crew.setter
+    def prev_crew(self, value):
+        self._prev_crew = value
+
     @classmethod
     @transaction.atomic
     def buy_ticket(cls, flight_id, user):
@@ -133,6 +157,15 @@ class Flight(models.Model):
         ticket = Ticket(flight=flight, passenger=user)
         ticket.clean()
         ticket.save()
+
+    def __init__(self, *args, **kwargs):
+        super(Flight, self).__init__(*args, **kwargs)
+
+    def save(self, *args, **kwargs):
+        super(Flight, self).save(*args, **kwargs)
+        if self.created == False:
+            self.created = True
+            super(Flight, self).save(*args, **kwargs)
 
     def clean(self):
         from datetime import timedelta
@@ -142,6 +175,15 @@ class Flight(models.Model):
             raise ValidationError(_('Flight should take at least 4 hours!'))
         if self.src_airport == self.dest_airport:
             raise ValidationError(_('Airports are not different!'))
+        print(self.created, self.crew)
+        if self.created == True and self.crew is None:
+            raise ValidationError(_('You can not unassign crew, without specifying new one!'))
+        if self.crew is not None:
+            if self.crew.flight_set.filter(
+                Q(start_date__lte=self.start_date, end_date__gt=self.start_date) |
+                Q(start_date__lte=self.end_date, end_date__gt=self.end_date)
+            ).exists():
+                raise ValidationError(_('Crew is already assigned to some flight at that time!'))
 
     class Meta:
         verbose_name = "Flight"
