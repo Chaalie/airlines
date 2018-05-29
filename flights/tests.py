@@ -44,8 +44,8 @@ class FlightsTestCase(TestCase):
         crew.save()
         flight = Flight(
             plane        = Plane.objects.get(pk='Batman'),
-            start_date   = datetime(1970, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
-            end_date     = datetime(1970, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
+            start_date   = datetime(2020, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
+            end_date     = datetime(2020, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
             src_airport  = Airport.objects.get(pk='WAW'),
             dest_airport = Airport.objects.get(pk='TXL')
         )
@@ -70,8 +70,8 @@ class FlightsTestCase(TestCase):
         crew.save()
         flight = Flight(
             plane        = Plane.objects.get(pk='Batman'),
-            start_date   = datetime(1970, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
-            end_date     = datetime(1970, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
+            start_date   = datetime(2020, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
+            end_date     = datetime(2020, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
             src_airport  = Airport.objects.get(pk='WAW'),
             dest_airport = Airport.objects.get(pk='TXL')
         )
@@ -96,16 +96,16 @@ class FlightsTestCase(TestCase):
         crew.save()
         flightA = Flight(
             plane        = Plane.objects.get(pk='Batman'),
-            start_date   = datetime(1970, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
-            end_date     = datetime(1970, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
+            start_date   = datetime(2020, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
+            end_date     = datetime(2020, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
             src_airport  = Airport.objects.get(pk='WAW'),
             dest_airport = Airport.objects.get(pk='TXL')
         )
         flightA.save()
         flightB = Flight(
             plane        = Plane.objects.get(pk='Superman'),
-            start_date   = datetime(1970, 1, 1, 1, 30, 0, tzinfo=pytz.UTC),
-            end_date     = datetime(1970, 1, 1, 6, 30, 0, tzinfo=pytz.UTC),
+            start_date   = datetime(2020, 1, 1, 1, 30, 0, tzinfo=pytz.UTC),
+            end_date     = datetime(2020, 1, 1, 6, 30, 0, tzinfo=pytz.UTC),
             src_airport  = Airport.objects.get(pk='TXL'),
             dest_airport = Airport.objects.get(pk='WAW')
         )
@@ -132,3 +132,149 @@ class FlightsTestCase(TestCase):
             }
         )
         self.assertEqual(response.status_code, 400)
+
+from django.test import LiveServerTestCase
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium.webdriver import ActionChains
+import time
+
+class FlightSeleniumTestCase(LiveServerTestCase):
+    fixtures = ['flights_tests.json']
+
+    def setUp(self):
+        user = User.objects.create_user(
+            username='user',
+            email='user@mail.com',
+            password='pass',
+        )
+        user.first_name = 'Bruce'
+        user.last_name = 'Wayne'
+        user.save()
+        flight = Flight(
+            plane        = Plane.objects.get(pk='Batman'),
+            start_date   = datetime(2020, 1, 1, 1, 0, 0, tzinfo=pytz.UTC),
+            end_date     = datetime(2020, 1, 1, 6, 0, 0, tzinfo=pytz.UTC),
+            src_airport  = Airport.objects.get(pk='WAW'),
+            dest_airport = Airport.objects.get(pk='TXL')
+        )
+        flight.save()
+        flight = Flight(
+            plane        = Plane.objects.get(pk='Superman'),
+            start_date   = datetime(2020, 1, 1, 1, 30, 0, tzinfo=pytz.UTC),
+            end_date     = datetime(2020, 1, 1, 6, 30, 0, tzinfo=pytz.UTC),
+            src_airport  = Airport.objects.get(pk='TXL'),
+            dest_airport = Airport.objects.get(pk='WAW')
+        )
+        flight.save()
+
+        self.selenium = WebDriver()
+        super(FlightSeleniumTestCase, self).setUp()
+
+    def tearDown(self):
+        self.selenium.quit()
+        super(FlightSeleniumTestCase, self).tearDown()
+
+    def test_add_passenger(self):
+        self.selenium.get(self.live_server_url)
+
+        # login first
+        self.selenium.find_element_by_name('username').send_keys('user')
+        self.selenium.find_element_by_name('password').send_keys('pass')
+        self.selenium.find_element_by_css_selector('input[type="submit"]').click()
+        alert = self.selenium.find_element_by_class_name('alert')
+        self.assertIn('alert-success', alert.get_attribute('class'))
+
+        # move to flights menu and select first one
+        self.selenium.find_element_by_link_text('Flights').click()
+        self.selenium.find_element_by_link_text('1').click()
+
+        # click 'Buy ticket' button and check if user shows up on list
+        self.selenium.find_element_by_css_selector('input[value="Buy ticket"]').click()
+        self.selenium.find_element_by_xpath('//*[@id="headingOne"]/button').click()
+        name_td = self.selenium.find_element_by_xpath('//*[@id="collapseOne"]/div/table/tbody/tr/td[2]')
+        self.assertEquals('Bruce Wayne', name_td.text)
+
+    def test_crew_add(self):
+        crew = Crew(
+            captain_firstname = 'Bruce',
+            captain_lastname  = 'Wayne'
+        )
+        crew.save()
+        action_chains = ActionChains(self.selenium)
+        self.selenium.get(self.live_server_url)
+
+        # login first
+        self.selenium.find_element_by_link_text('Crews').click()
+        self.selenium.find_element_by_name('username').send_keys('user')
+        self.selenium.find_element_by_name('password').send_keys('pass')
+        self.selenium.find_element_by_xpath('//*[@id="login-form"]/input[3]').click()
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_class_name('alert')
+        )
+        alert = self.selenium.find_element_by_class_name('alert')
+        self.assertIn('alert-success', alert.get_attribute('class'))
+
+        # setup date of flights
+        self.selenium.find_element_by_id('choose-date').send_keys('2020-01-01')
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_xpath('//*[@id="flights"]/tr[1]')
+        )
+
+        # double click on first flight
+        row = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]')
+        action_chains.double_click(row).perform()
+
+        # choose first crew
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_xpath('//*[@id="select-crew"]/option[2]')
+        )
+        self.selenium.find_element_by_xpath('//*[@id="select-crew"]/option[2]').click()
+        time.sleep(5)
+
+        # send 'Change crew' and wait for change query to end
+        self.selenium.find_element_by_xpath('//*[@id="crew-form"]/div[7]/input').click()
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_class_name('alert')
+        )
+        alert = self.selenium.find_element_by_class_name('alert')
+        self.assertIn('alert-success', alert.get_attribute('class'))
+
+        # refresh page and check if crew changed
+        self.selenium.refresh()
+        action_chains = ActionChains(self.selenium)
+        self.selenium.find_element_by_id('choose-date').send_keys('2020-01-01')
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_xpath('//*[@id="flights"]/tr[1]')
+        )
+        new_crew = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]/td[6]')
+        self.assertEquals('Bruce Wayne', new_crew.text)
+
+        # double click on second flight
+        row2 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[2]')
+        action_chains.double_click(row2).perform()
+
+        # choose first crew
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_xpath('//*[@id="select-crew"]/option[2]')
+        )
+        self.selenium.find_element_by_xpath('//*[@id="select-crew"]/option[2]').click()
+
+        # send 'Change crew' and wait for change query to end
+        self.selenium.find_element_by_xpath('//*[@id="crew-form"]/div[7]/input').click()
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_class_name('alert')
+        )
+        alert = self.selenium.find_element_by_class_name('alert')
+        self.assertIn('alert-danger', alert.get_attribute('class'))
+
+        # check if crews didn't change
+        self.selenium.refresh()
+        self.selenium.find_element_by_id('choose-date').send_keys('2020-01-01')
+        WebDriverWait(self.selenium, 3).until(
+            lambda driver: driver.find_element_by_xpath('//*[@id="flights"]/tr[1]')
+        )
+        crew1 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]/td[6]')
+        crew2 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[2]/td[6]')
+        self.assertEquals('Bruce Wayne', crew1.text)
+        self.assertEquals('None', crew2.text)
