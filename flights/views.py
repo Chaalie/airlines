@@ -11,6 +11,7 @@ from django.core.exceptions import ValidationError, PermissionDenied
 from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import csrf_exempt
 from datetime import datetime, timedelta
+import pytz
 
 from .forms import RegistrationForm
 from .models import *
@@ -163,7 +164,8 @@ def ajax_change_crew(request):
 @csrf_exempt
 def ajax_get_flights(request):
     try:
-        frm = datetime.strptime(request.GET['date'], '%Y-%m-%d')
+        tz = pytz.timezone('Europe/Warsaw')
+        frm = tz.localize(datetime.strptime(request.GET['date'], '%Y-%m-%d'))
         to = frm + timedelta(days=1)
         objs = Flight.objects.filter(start_date__gte=frm, start_date__lt=to).order_by('start_date')
     except:
