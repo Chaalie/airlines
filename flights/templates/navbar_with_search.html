@@ -7,6 +7,10 @@
         <li class="nav-item">
             <a class="nav-link" href="{% url 'flight_list' %}">Flights</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/static/crews.html">Crews</a>
+        </li>
+
     </ul>
     <form class="form-inline my-2 my-lg-0" action="{% url 'flight_list' %}" method="GET">
         <input class="form-control mr-sm-2" type="text" name="phrase" placeholder="Enter search phrase..." required>

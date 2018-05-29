@@ -15,6 +15,8 @@ class Command(BaseCommand):
     aircrafts_names = []
     airports_data = {}
     aircrafts_data = {}
+    firstnames = []
+    surnames = []
 
     def handle(self, *args, **options):
         def clear_db():
@@ -25,6 +27,7 @@ class Command(BaseCommand):
             Airport.objects.all().delete()
             Flight.objects.all().delete()
             Ticket.objects.all().delete()
+            Crew.objects.all().delete()
 
         call_command('makemigrations')
         call_command('migrate')
@@ -38,6 +41,14 @@ class Command(BaseCommand):
             aircrafts_data = json.loads(f.read())
         with open(os.path.join(path, 'data', 'airports_eu.json'), 'r') as f:
             airports_data = json.loads(f.read())
+        with open(os.path.join(path, 'data', 'firstnames.csv'), 'r') as f:
+            names = csv.reader(f, delimiter=',')
+            next(names)
+            firstnames = [x[1].title() for x in names]
+        with open(os.path.join(path, 'data', 'surnames.csv'), 'r') as f:
+            names = csv.reader(f, delimiter=',')
+            next(names)
+            surnames = [x[1].title() for x in names]
 
         clear_db()
         with transaction.atomic():
@@ -121,6 +132,18 @@ class Command(BaseCommand):
                     )
                     flight_obj.full_clean()
                     flight_obj.save()
+
+        with transaction.atomic():
+            crews_num = 50
+            first_name = random.choices(firstnames, k=crews_num)
+            last_name  = random.choices(surnames,   k=crews_num)
+            for (f, l) in set(zip(first_name, last_name)):
+                crew_obj = Crew(
+                    captain_firstname = f,
+                    captain_lastname = l
+                )
+                crew_obj.full_clean()
+                crew_obj.save()
 
 
 
