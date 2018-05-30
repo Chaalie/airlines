@@ -119,14 +119,23 @@ function display_flights(flights)
     for (var i in flights)
     {
         f = flights[i];
+        members = '';
+        for (var j in f.members)
+        {
+            m = f.members[j];
+            members += `<span class="member">${m.firstname} ${m.lastname}</span>`;
+        }
         $('#flights').append(
             `<tr>
-                <td>${f.id}</td>
+                <td align="center">${f.id}</td>
                 <td>${f.departure_airport}</td>
                 <td>${f.departure_date}</td>
                 <td>${f.arrival_airport}</td>
                 <td>${f.arrival_date}</td>
-                <td>${f.captain}</td>
+                <td class="crew">
+                    <span class="captain">${f.captain}</span>
+                    ${members}
+                </td>
             </tr>`
         );
     }

@@ -85,10 +85,17 @@ class Airport(models.Model):
         verbose_name = "Airport"
         verbose_name_plural = "Airports"
 
+class CrewMember(models.Model):
+    firstname = models.CharField(max_length=64)
+    lastname = models.CharField(max_length=64)
+
+    def __str__(self):
+        return f'{self.firstname} {self.lastname}'
 
 class Crew(models.Model):
     captain_firstname = models.CharField(max_length=64)
     captain_lastname = models.CharField(max_length=64)
+    members = models.ManyToManyField(CrewMember)
 
     def __str__(self):
         return f'{self.captain_firstname} {self.captain_lastname}'

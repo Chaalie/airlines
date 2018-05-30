@@ -27,6 +27,7 @@ class Command(BaseCommand):
             Airport.objects.all().delete()
             Flight.objects.all().delete()
             Ticket.objects.all().delete()
+            CrewMember.objects.all().delete()
             Crew.objects.all().delete()
 
         call_command('makemigrations')
@@ -142,10 +143,15 @@ class Command(BaseCommand):
                     captain_firstname = f,
                     captain_lastname = l
                 )
-                crew_obj.full_clean()
                 crew_obj.save()
-
-
-
-
-
+                members_num = random.randint(2, 4)
+                for _ in range(members_num):
+                    fname = random.choice(firstnames)
+                    lname = random.choice(surnames)
+                    cm = CrewMember(
+                        firstname = fname,
+                        lastname = lname
+                    )
+                    cm.save()
+                    crew_obj.members.add(cm)
+                    crew_obj.save()

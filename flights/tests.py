@@ -201,6 +201,13 @@ class FlightSeleniumTestCase(LiveServerTestCase):
             captain_lastname  = 'Wayne'
         )
         crew.save()
+        cm = CrewMember(
+            firstname = 'Clark',
+            lastname = 'Kent'
+        )
+        cm.save()
+        crew.members.add(cm)
+        crew.save()
         action_chains = ActionChains(self.selenium)
         self.selenium.get(self.live_server_url)
 
@@ -247,7 +254,7 @@ class FlightSeleniumTestCase(LiveServerTestCase):
         WebDriverWait(self.selenium, 3).until(
             lambda driver: driver.find_element_by_xpath('//*[@id="flights"]/tr[1]')
         )
-        new_crew = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]/td[6]')
+        new_crew = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]/td[6]/span[@class="captain"]')
         self.assertEquals('Bruce Wayne', new_crew.text)
 
         # double click on second flight
@@ -274,7 +281,7 @@ class FlightSeleniumTestCase(LiveServerTestCase):
         WebDriverWait(self.selenium, 3).until(
             lambda driver: driver.find_element_by_xpath('//*[@id="flights"]/tr[1]')
         )
-        crew1 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]/td[6]')
-        crew2 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[2]/td[6]')
+        crew1 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[1]/td[6]/span[@class="captain"]')
+        crew2 = self.selenium.find_element_by_xpath('//*[@id="flights"]/tr[2]/td[6]/span[@class="captain"]')
         self.assertEquals('Bruce Wayne', crew1.text)
         self.assertEquals('None', crew2.text)

@@ -178,6 +178,13 @@ def ajax_get_flight(request):
         objs = objs.filter(pk__in=ids)
     flights = []
     for f in objs:
+        members = []
+        if f.crew is not None:
+            for m in f.crew.members.all():
+                members.append({
+                    'firstname': m.firstname,
+                    'lastname': m.lastname
+                })
         flights.append({
             'id': f.id,
             'departure_airport': str(f.src_airport),
@@ -185,6 +192,7 @@ def ajax_get_flight(request):
             'arrival_airport': str(f.dest_airport),
             'arrival_date': f.end_date_pretty,
             'captain': str(f.crew),
+            'members': members,
         })
 
     return JsonResponse(flights, safe=False, json_dumps_params={'indent': 4})
@@ -199,10 +207,17 @@ def ajax_get_crew(request):
 
     crews = []
     for c in objs:
+        members = []
+        for m in c.members.all():
+            members.append({
+                'firstname': m.firstname,
+                'lastname': m.lastname
+            })
         crews.append({
             'id': c.id,
             'captain_firstname': c.captain_firstname,
             'captain_lastname': c.captain_lastname,
+            'members': members,
         })
 
     return JsonResponse(crews, safe=False, json_dumps_params={'indent': 4})
