@@ -73,6 +73,7 @@ class FlightConsumer(JsonWebsocketConsumer):
                     'error': 'login'
                 }, **self.get_data()
             })
+            return
 
         verified = {}
         to_save = []
