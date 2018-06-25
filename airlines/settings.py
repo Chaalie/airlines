@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'flights',
     'utils',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,14 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
         messages.ERROR: 'danger'
 }
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': [('localhost', 6379)],
+        },
+    },
+}
+
+ASGI_APPLICATION = 'airlines.routing.application'

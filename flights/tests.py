@@ -133,13 +133,13 @@ class FlightsTestCase(TestCase):
         )
         self.assertEqual(response.status_code, 400)
 
-from django.test import LiveServerTestCase
+from django.test import StaticLiveServerTestCase
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver import ActionChains
 import time
 
-class FlightSeleniumTestCase(LiveServerTestCase):
+class FlightSeleniumTestCase(StaticLiveServerTestCase):
     fixtures = ['flights_tests.json']
 
     def setUp(self):
@@ -237,7 +237,6 @@ class FlightSeleniumTestCase(LiveServerTestCase):
             lambda driver: driver.find_element_by_xpath('//*[@id="select-crew"]/option[2]')
         )
         self.selenium.find_element_by_xpath('//*[@id="select-crew"]/option[2]').click()
-        time.sleep(5)
 
         # send 'Change crew' and wait for change query to end
         self.selenium.find_element_by_xpath('//*[@id="crew-form"]/div[7]/input').click()
