@@ -12,7 +12,7 @@ function add_notification(msg, where)
 function display_form(flight, row)
 {
     $('#form-notifications').empty();
-    var crews = JSON.parse(sessionStorage.crews);
+    var crews = crewsStorage.toDict();
     var f_crew = crews[flight.crew_id];
 
     $('#form-id').text(flight.id);
@@ -101,7 +101,7 @@ function get_user()
 
 function set_form(flight_id, row)
 {
-    var flight = JSON.parse(sessionStorage.flights)[flight_id];
+    var flight = flightsStorage.get(flight_id);
 
     display_form(flight, row);
     $('.table-info').removeClass('table-info');
@@ -110,8 +110,8 @@ function set_form(flight_id, row)
 
 function update_data(flights, crews)
 {
-    sessionStorage.flights = JSON.stringify(flights);
-    sessionStorage.crews = JSON.stringify(crews);
+    flightsStorage = new MyStorage(flights);
+    crewsStorage = new MyStorage(crews);
 
     show_flights();
 }
@@ -120,8 +120,8 @@ function update_changes_list()
 {
     $('#changes').empty();
 
-    var changes = JSON.parse(sessionStorage.changes);
-    var crews = JSON.parse(sessionStorage.crews);
+    var changes = changeStorage.toDict();
+    var crews = crewsStorage.toDict();
 
     for (var f_id in changes) {
         var old_captain = 'None';
@@ -129,12 +129,12 @@ function update_changes_list()
         var change = changes[f_id];
 
         if (change.old !== null) {
-            var c = crews[change.old];
+            var c = crewsStorage.get(change.old);
             old_captain = `${c.captain_firstname} ${c.captain_lastname}`;
         }
 
         if (change.new !== null) {
-            var c = crews[change.new];
+            var c = crewsStorage.get(change.new);
             new_captain = `${c.captain_firstname} ${c.captain_lastname}`;
         }
 
@@ -158,7 +158,7 @@ function show_flights(date=$('#choose-date').val())
     d1.setUTCMinutes(0);
     d1.setUTCSeconds(0);
     d1.setUTCMilliseconds(0);
-    var raw = JSON.parse(sessionStorage.flights);
+    var raw = flightsStorage.toDict();
 
     var flights = Object.keys(raw)
                   .filter(function (key) {
@@ -173,8 +173,8 @@ function show_flights(date=$('#choose-date').val())
                       obj[key] = raw[key];
                       return obj;
                   }, {});
-    var crews = JSON.parse(sessionStorage.crews);
-    var changes = JSON.parse(sessionStorage.changes);
+
+    var changes = changeStorage.toDict();
 
     for (var id in flights) {
         var f = flights[id];
@@ -183,10 +183,10 @@ function show_flights(date=$('#choose-date').val())
         var members = '';
 
         if (id in changes) {
-            c = crews[changes[id].new];
+            c = crewsStorage.get(changes[id].new);
         }
         else if (f.crew_id !== null) {
-            c = crews[f.crew_id];
+            c = crewsStorage.get(f.crew_id);
         }
 
         if (c !== null) {
@@ -217,8 +217,7 @@ function change_crew(crew_id, flight_id)
 {
     if (crew_id === null) return;
 
-    var changes = JSON.parse(sessionStorage.changes);
-    var flight = JSON.parse(sessionStorage.flights)[flight_id];
+    var flight = flightsStorage.get(flight_id);
     var old_crew_id;
     var old_crew;
 
@@ -227,15 +226,12 @@ function change_crew(crew_id, flight_id)
         old_crew_id = null;
     }
     else {
-        old_crew = JSON.parse(sessionStorage.crews)[flight.crew_id];
+        old_crew = crewsStorage.get(flight.crew_id);
         old_crew_id = old_crew.id;
     }
 
-    changes[flight.id] = {'new': crew_id, 'old': old_crew_id};
-    sessionStorage.changes = JSON.stringify(changes);
-
+    changeStorage.add(flight.id, crew_id, old_crew_id);
     update_changes_list();
-
     show_flights();
 
     var msg = {'tags': 'success', 'info': 'Crew successfully assigned!'};
@@ -244,10 +240,7 @@ function change_crew(crew_id, flight_id)
 
 function remove_change(flight_id)
 {
-    var changes = JSON.parse(sessionStorage.changes);
-    delete changes[flight_id];
-    sessionStorage.changes = JSON.stringify(changes);
-
+    changeStorage.remove(flight_id);
     update_changes_list();
     show_flights();
 }
@@ -367,10 +360,9 @@ $().ready(function() {
     requests = 0;
     start_websocket();
 
-    if (!('changes' in sessionStorage)) {
-        sessionStorage.changes = '{}';
-    }
-    update_changes_list();
+    changeStorage = new ChangeStorage();
+    crewsStorage = new MyStorage();
+    flightsStorage = new MyStorage();
 
     $('#choose-date').val(new Date().toDateInputValue());
 
@@ -402,15 +394,17 @@ $().ready(function() {
     });
 
     $('#sync-button').click(function(e) {
-        var data = JSON.parse(sessionStorage.changes);
+        disable_buttons();
+
+        var data = changeStorage.toDict();
         var user = get_user();
         $('#crew-form').hide();
+
         ws.send(JSON.stringify({
             'type': 'sync',
             'data': data,
             'username': user.username,
             'password': user.password
         }));
-        disable_buttons();
     });
 });

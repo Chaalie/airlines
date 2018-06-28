@@ -1,0 +1,20 @@
+{
+  "name": "airlines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc flights/static/crews-classes.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaalie/airlines.git"
+  },
+  "author": "Karol Waszczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaalie/airlines/issues"
+  },
+  "homepage": "https://github.com/Chaalie/airlines#readme"
+}
