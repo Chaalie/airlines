@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./create_venv.sh ; tsc flights/static/crews-classes.ts"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Chaalie/airlines/issues"
   },
-  "homepage": "https://github.com/Chaalie/airlines#readme"
+  "homepage": "https://github.com/Chaalie/airlines#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.3.4"
+  }
 }

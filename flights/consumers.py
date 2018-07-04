@@ -1,6 +1,7 @@
 from channels.generic.websocket import JsonWebsocketConsumer
 from django.contrib.auth import authenticate
 from django.core.exceptions import ValidationError
+from django.shortcuts import get_object_or_404
 from django.db import transaction
 
 from .models import Flight, Crew
@@ -36,7 +37,7 @@ class FlightConsumer(JsonWebsocketConsumer):
                     'departure_date': f.start_date_pretty,
                     'arrival_airport': str(f.dest_airport),
                     'arrival_date': f.end_date_pretty,
-                    'crew_id': f.crew.id if f.crew is not None else None,
+                    'crew_id': f.crew.id if f.crew is not None else '',
                 }
             return flights
 
@@ -82,11 +83,11 @@ class FlightConsumer(JsonWebsocketConsumer):
             with transaction.atomic():
                 for k, v in content['data'].items():
                     try:
-                        fli = Flight.objects.get(id=k)
-                        crw = Crew.objects.get(id=v['new'])
+                        fli = get_object_or_404(Flight, id=k)
+                        crw = get_object_or_404(Crew, id=v['new'])
                         crw_old = None
-                        if v['old'] is not None:
-                            crw_old = Crew.objects.get(id=v['old'])
+                        if v['old']:
+                            crw_old = get_object_or_404(id=v['old'])
 
                         if v['old'] == v['new'] or crw_old != fli.crew:
                             verified[k] = 'wrong'

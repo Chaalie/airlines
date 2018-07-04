@@ -27,7 +27,7 @@ function display_form(flight, row)
         `<option selected disabled hidden>${$(row).find('.captain').text()}</option>`
     );
     for (var i in crews) {
-        c = crews[i];
+        var c = crews[i];
         $('#select-crew').append(
             `<option value="${c.id}">${c.captain_firstname} ${c.captain_lastname}</option>`
         );
@@ -108,158 +108,6 @@ function set_form(flight_id, row)
     $(row).addClass('table-info');
 }
 
-function update_data(flights, crews)
-{
-    flightsStorage = new MyStorage(flights);
-    crewsStorage = new MyStorage(crews);
-
-    show_flights();
-}
-
-function update_changes_list()
-{
-    $('#changes').empty();
-
-    var changes = changeStorage.toDict();
-    var crews = crewsStorage.toDict();
-
-    for (var f_id in changes) {
-        var old_captain = 'None';
-        var new_captain = 'None';
-        var change = changes[f_id];
-
-        if (change.old !== null) {
-            var c = crewsStorage.get(change.old);
-            old_captain = `${c.captain_firstname} ${c.captain_lastname}`;
-        }
-
-        if (change.new !== null) {
-            var c = crewsStorage.get(change.new);
-            new_captain = `${c.captain_firstname} ${c.captain_lastname}`;
-        }
-
-        $('#changes').append(`
-            <tr id="change-${f_id}">
-                <td class="flight-id">${f_id}</td>
-                <td class="old-crew">${old_captain}</td>
-                <td class="new-crew">${new_captain}</td>
-                <td><button type="button" class="close change-remove">&times;</button></td>
-            </tr>`
-        );
-    }
-}
-
-function show_flights(date=$('#choose-date').val())
-{
-    $('#flights').empty();
-
-    var d1 = new Date(date);
-    d1.setUTCHours(0);
-    d1.setUTCMinutes(0);
-    d1.setUTCSeconds(0);
-    d1.setUTCMilliseconds(0);
-    var raw = flightsStorage.toDict();
-
-    var flights = Object.keys(raw)
-                  .filter(function (key) {
-                      var d2 = new Date(raw[key].departure_date);
-                      d2.setUTCHours(0);
-                      d2.setUTCMinutes(0);
-                      d2.setUTCSeconds(0);
-                      d2.setUTCMilliseconds(0);
-                      return d1.getTime() === d2.getTime();
-                  })
-                  .reduce(function (obj, key) {
-                      obj[key] = raw[key];
-                      return obj;
-                  }, {});
-
-    var changes = changeStorage.toDict();
-
-    for (var id in flights) {
-        var f = flights[id];
-        var captain = 'None';
-        var c = null;
-        var members = '';
-
-        if (id in changes) {
-            c = crewsStorage.get(changes[id].new);
-        }
-        else if (f.crew_id !== null) {
-            c = crewsStorage.get(f.crew_id);
-        }
-
-        if (c !== null) {
-            captain = `${c.captain_firstname} ${c.captain_lastname}`;
-
-            for (var j in c.members) {
-                m = c.members[j];
-                members += `<span class="member">${m.firstname} ${m.lastname}</span>`;
-            }
-        }
-        $('#flights').append(
-            `<tr>
-                <td>${f.id}</td>
-                <td>${f.departure_airport}</td>
-                <td>${f.departure_date}</td>
-                <td>${f.arrival_airport}</td>
-                <td>${f.arrival_date}</td>
-                <td class="crew">
-                    <span class="captain">${captain}</span>
-                    ${members}
-                </td>
-            </tr>`
-        );
-    }
-}
-
-function change_crew(crew_id, flight_id)
-{
-    if (crew_id === null) return;
-
-    var flight = flightsStorage.get(flight_id);
-    var old_crew_id;
-    var old_crew;
-
-    if (flight.crew_id === null) {
-        old_crew = null;
-        old_crew_id = null;
-    }
-    else {
-        old_crew = crewsStorage.get(flight.crew_id);
-        old_crew_id = old_crew.id;
-    }
-
-    changeStorage.add(flight.id, crew_id, old_crew_id);
-    update_changes_list();
-    show_flights();
-
-    var msg = {'tags': 'success', 'info': 'Crew successfully assigned!'};
-    add_notification(msg, '#form-notifications');
-}
-
-function remove_change(flight_id)
-{
-    changeStorage.remove(flight_id);
-    update_changes_list();
-    show_flights();
-}
-
-function mark_changes(verified)
-{
-    for (var id in verified) {
-        var c = verified[id];
-        var row_id = `#change-${id}`;
-
-        if (verified[id] === 'ok') {
-            $(row_id).addClass('table-success');
-        }
-        else if (verified[id] === 'wrong') {
-            $(row_id).addClass('table-danger');
-        }
-    }
-}
-
 function start_websocket() {
     ws = new WebSocket('ws://localhost:8000/crews/');
 
@@ -279,56 +127,10 @@ function start_websocket() {
 
     ws.onmessage = function(event) {
         var data = JSON.parse(event.data);
-        var msg = {}
 
         console.log(`Got message "${data.type}"`);
 
-        switch (data.type) {
-            case 'login':
-                if (!('error' in data)) {
-                    $('#nav-login').hide();
-                    $('#nav-user #username').text(get_user()['username']);
-                    $('#nav-user').show();
-
-                    msg = {'tags': 'success', 'info': 'You have successfully logged in!'};
-                }
-                else {
-                    msg = {'tags': 'danger', 'info': 'Invalid username or password!'};
-                }
-                break;
-
-            case 'sync':
-                update_data(data.flights, data.crews);
-                if (!('error' in data)) {
-                    sessionStorage.changes = '{}'
-                    $('#changes').empty();
-                    msg = {'tags': 'success', 'info': 'Data synchronization successful!'}
-                }
-                else {
-                    switch (data.error) {
-                        case 'login':
-                            msg = {'tags': 'danger', 'info': 'Data synchronization failed! Invalid username or password!'}
-                            break;
-
-                        case 'changes':
-                            mark_changes(data.verified);
-                            msg = {'tags': 'danger', 'info': 'Data synchronization failed! Commited changes are incorrect. Check changes list.'}
-                            break;
-
-                        default:
-                            msg = {'tags': 'danger', 'info': 'Whoops! Something went wrong...'}
-                            break;
-                    }
-                }
-                break;
-
-            case 'get':
-                update_data(data.flights, data.crews);
-                break;
-
-            default:
-                break;
-        }
+        var msg = do_onmessage(data);
 
         if ('info' in msg) {
             add_notification(msg, '#main-notifications');
@@ -350,19 +152,14 @@ $(document).on('dblclick', '#flights tr', function()
     set_form(flight_id, this);
 });
 
-$(document).on('click', '.change-remove', function()
-{
-    var id = $(this).parent().parent().find('.flight-id').text();
-    remove_change(id);
-});
-
 $().ready(function() {
     requests = 0;
-    start_websocket();
 
     changeStorage = new ChangeStorage();
     crewsStorage = new MyStorage();
     flightsStorage = new MyStorage();
+
+    start_websocket();
 
     $('#choose-date').val(new Date().toDateInputValue());
 
@@ -407,4 +204,6 @@ $().ready(function() {
             'password': user.password
         }));
     });
+
+    $(document).on('click', '.change-remove', click_change_remove);
 });
